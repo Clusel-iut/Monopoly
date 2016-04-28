@@ -1,7 +1,7 @@
 
 public class Rack
 {
-	private int mdr;
+	private final int mdr;
 	
 	public Rack()
 	{
