@@ -1,4 +1,4 @@
 # Monopoly
 
 
-ENFIN
+JE COMPREND PAS PTUAN
