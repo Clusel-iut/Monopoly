@@ -1,13 +1,13 @@
 
 public class MonopolyGame
 {
-	private final int pion;  
-	private final int lol;
+	private final int M;  
+	private final int A;
 	
 	public MonopolyGame(int x0, int y0)
 	{
-		this.pion = y0;
-		this.y=lol = y0;
+		this.M = x0;
+		this.A = y0;
 		
 	}
 
