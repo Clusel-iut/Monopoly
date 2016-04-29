@@ -1,7 +1,7 @@
 package fr.iutvalence.info.dut.m2107;
 
 /**
- * reprensent the first case of the game.
+ * represent the first case of the game.
  * Each times a player pass by the case, he earns 2000euros.
  * @author cluselm
  *
