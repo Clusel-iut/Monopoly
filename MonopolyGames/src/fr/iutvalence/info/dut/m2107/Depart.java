@@ -1,6 +1,8 @@
 package fr.iutvalence.info.dut.m2107;
 
 /**
+ * represent the first case of the game.
+ * Each times a player pass by the case, he earns 2000euros.
  * @author cluselm
  *
  */
@@ -14,13 +16,15 @@ public class Depart extends Case {
 	/**
 	 * 
 	 */
-	public void verserArgent() {
-		// TODO - implement D�part.verserArgent
+	public void verserArgent()
+	
+	{
+		
 		throw new UnsupportedOperationException();
 	}
 
 	/**
-	 * @return
+	 * @return somme
 	 */
 	@SuppressWarnings("javadoc")
 	public int getSomme()
