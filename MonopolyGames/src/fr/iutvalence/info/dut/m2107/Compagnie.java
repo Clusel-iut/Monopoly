@@ -1,6 +1,18 @@
 package fr.iutvalence.info.dut.m2107;
 
 /**
+ * 
+ * 
+ * 
+ * 
+ * 
+ * CLASS INUTILE ?
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
  * @author cluselm
  *
  */
