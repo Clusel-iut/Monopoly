@@ -28,7 +28,7 @@ public class De {
 	 * @return true 
 	 * 
 	 */
-	public boolean IsDouble() {
+	public boolean isDouble() {
 		// TODO - implement D�.IsDouble
 		throw new UnsupportedOperationException();
 	}
