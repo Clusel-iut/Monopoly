@@ -1,18 +1,20 @@
 package fr.iutvalence.info.dut.m2107;
 
 /**
- * @author cluselm
+ * Class representing taxes in the game
+ * 
+ * @author martithi
  *
  */
 public class Taxe extends Case {
 
 	/**
-	 * 
+	 * Total value of the taxe
 	 */
 	private int somme;
 
 	/**
-	 * 
+	 * Method to pay taxes
 	 */
 	public void payer() {
 		// TODO - implement Taxe.payer
@@ -20,7 +22,8 @@ public class Taxe extends Case {
 	}
 
 	/**
-	 * @return
+	 * Method to view total value of taxes
+	 * @return somme
 	 */
 	public int getSomme()
 	{
@@ -28,6 +31,7 @@ public class Taxe extends Case {
 	}
 
 	/**
+	 * Method to set the value of taxes
 	 * @param somme
 	 */
 	public void setSomme(int somme)
