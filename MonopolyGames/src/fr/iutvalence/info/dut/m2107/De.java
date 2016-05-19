@@ -9,7 +9,14 @@ import java.util.Random;
  */
 public class De {
 
+	/**
+	 * Value of dice 1
+	 */
 	private int valeur_de1;
+	
+	/**
+	 * Value of dice 2
+	 */
 	private int valeur_de2;
 	private int advance;
 		
@@ -21,7 +28,7 @@ public class De {
 	 * @return an integer between 1 and 6
 	 * The player advance with the  cases. 
 	 */
-	@SuppressWarnings("javadoc")
+
 	public int lancerDe() 
 	
 	{
@@ -30,7 +37,6 @@ public class De {
 		this.valeur_de2 = ((int) (Math.random() * 5 + 1));
 		this.setAdvance((((this.getValeur_de1())+(this.getValeur_de2()))));
 		return this.getAdvance();
-		
 		
 	}
 
