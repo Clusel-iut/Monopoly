@@ -1,5 +1,6 @@
 package fr.iutvalence.info.dut.m2107;
 
+
 /**
  * Class where methods of the Monopoly games are called
  * @author martithi
@@ -7,19 +8,32 @@ package fr.iutvalence.info.dut.m2107;
  */
 public class MonopolyGame
 {
-	private final int M;  
-	private final int A;
 	
 	/**
-	 * Method to launch/create a game
-	 * @param x0
-	 * @param y0
+	 * player inputs table
 	 */
-	public MonopolyGame(int x0, int y0)
+	private Joueur[] players;
+
+	/**
+	 * rack inputs table
+	 */
+	private Rack[] racks;
+
+
+	/**
+	 * Creates a new monopoly game
+	 */
+	public MonopolyGame()
 	{
-		this.M = x0;
-		this.A = y0;
+
+	this.racks = new Rack[2];
+	this.racks[0]= new Rack();
+	this.racks[1] = new Rack();
+	this.players = new Joueur[2];
+	this.players[0] = new Joueur();
+	this.players[1] = new Joueur();
 		
 	}
+	
 
 }
