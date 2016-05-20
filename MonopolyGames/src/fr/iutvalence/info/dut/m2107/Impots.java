@@ -19,10 +19,10 @@ public class Impots extends Case {
 		throw new UnsupportedOperationException();
 	}
 
+	
 	/**
 	 * @return
 	 */
-	@SuppressWarnings("javadoc")
 	public int getSomme()
 	{
 		return this.somme;
