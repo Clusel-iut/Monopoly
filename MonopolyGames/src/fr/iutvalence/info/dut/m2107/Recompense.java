@@ -1,8 +1,10 @@
 
 package fr.iutvalence.info.dut.m2107;
 
-/*
- * Represent a player who win money
+/**
+ * Represents a player who win money
+ * @author reyqu
+ *
  */
 public class Recompense {
 	

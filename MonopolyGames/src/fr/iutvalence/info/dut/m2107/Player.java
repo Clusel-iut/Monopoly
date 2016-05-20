@@ -1,7 +1,10 @@
 package fr.iutvalence.info.dut.m2107;
 
-/*
- * represent the current player
+/**
+ * Class representing the current player
+ * 
+ * @author martithi
+ *
  */
 public class Player
 {
