@@ -7,14 +7,7 @@ package fr.iutvalence.info.dut.m2107;
  */
 public class Joueur {
 
-	/**
-	 * ???
-	 */
-	Banque recevoirArgent;
-	/**
-	 * ???
-	 */
-	Carte action;
+	
 	/**
 	 * Player's last name
 	 */
@@ -23,10 +16,6 @@ public class Joueur {
 	 * Player's first name
 	 */
 	private String prenom;
-	/**
-	 * Player's age
-	 */
-	private int age;
 	/**
 	 * Identifier of player
 	 */
@@ -42,14 +31,20 @@ public class Joueur {
 	/**
 	 * Money
 	 */
-	private int capital;
+	private Argent money;
 
 	/**
 	 * Method to initialize a player
 	 */
-	public Joueur() {
-		// TODO - implement Joueur.Joueur
-		throw new UnsupportedOperationException();
+	public Joueur(String Nom, String Prenom) {
+		
+		this.nom=Nom;
+		this.prenom=Prenom;
+		this.position=Case.start;
+		this.money=1500;
+		
+	
+		
 	}
 
 	/**
