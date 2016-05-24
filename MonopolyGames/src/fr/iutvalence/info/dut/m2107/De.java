@@ -18,6 +18,9 @@ public class De {
 	 * Value of dice 2
 	 */
 	private int valeur_de2;
+	/**
+	 * Value of the sum of the 2dices
+	 */
 	private int advance;
 		
 

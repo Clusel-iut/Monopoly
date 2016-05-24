@@ -16,7 +16,7 @@ public class Argent
 	 * @author cluselm
 	 */
 	private int money;
-	
+		
 	
 	/**
 	 * Represents the money of all players at the start
@@ -35,6 +35,17 @@ public class Argent
 	 * @author cluselm
 	 */
 	private int money_player2;	
+	
+	
+	
+	/**
+	 * This constructor initialize the money for the start of the game
+	 */
+	public Argent()
+	{
+		this.money_player1=DEFAULT_MONEY;
+		this.money_player2=DEFAULT_MONEY;
+	}
 	
 
 	
