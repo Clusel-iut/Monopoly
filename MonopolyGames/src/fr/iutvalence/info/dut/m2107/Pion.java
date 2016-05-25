@@ -15,41 +15,28 @@ public class Pion {
 	/**
 	 * Both arguments are representing the x and y's position of the pawn on the board
 	 */
-	private double xPosition;
-	private double yPosition;
+	private int xPosition;
+	private int yPosition;
+	private static final int DEFAULT_XPOSITION = 0;
+	private static final int DEFAULT_YPOSITION = 0;
 
-	/**
-	 * Method to update the position of the pawn       ????????
-	 * @param xPosition
-	 * @param yPosition
-	 */
-	public void Position(int xPosition, int yPosition) {
-		// TODO - implement Pion.Position
-		throw new UnsupportedOperationException();
-	}
-
+	
 	/**
 	 * Method to get the position of a player's pawn
 	 */
-	public void getPosition() {
-		// TODO - implement Pion.getPosition
-		throw new UnsupportedOperationException();
+	public int getxPosition() {
+		return this.xPosition;
+	}
+	public int getyPosition() {
+		return this.yPosition;
+	}
+	public int getCouleur() {
+		return this.couleur;
 	}
 
-	/**
-	 * ???
-	 */
-	public Pion() {
-		// TODO - implement Pion.Pion
-		throw new UnsupportedOperationException();
+	public Pion(int couleur) {
+		this.couleur = couleur;
+		this.xPosition = DEFAULT_XPOSITION;
+		this.yPosition = DEFAULT_YPOSITION;
 	}
-
-	/**
-	 * ???
-	 */
-	public void operation() {
-		// TODO - implement Pion.operation
-		throw new UnsupportedOperationException();
-	}
-
 }
