@@ -27,7 +27,7 @@ public class Joueur {
 	/**
 	 * Player's pawn's position
 	 */
-	private double position;
+	private int position;
 	/**
 	 * Money
 	 */
@@ -58,10 +58,11 @@ public class Joueur {
 
 	/**
 	 * Method to get the position of the player at any time
+	 * @return position
 	 */
-	public void getPosition() {
-		// TODO - implement Joueur.getPosition
-		throw new UnsupportedOperationException();
+	public int getPosition() 
+	{
+		return this.position;	
 	}
 
 	/**
@@ -86,6 +87,17 @@ public class Joueur {
 	public void action() {
 		// TODO - implement Joueur.action
 		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * advance the position of the pion 
+	 * @param avancer
+	 */
+	public void Avancer(int avancer)
+	{
+		this.position= ((this.position+avancer) % 40);
+		
+		
 	}
 
 }
