@@ -2,7 +2,7 @@ package fr.iutvalence.info.dut.m2107;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.event.ActionListener;
+
 import javax.swing.*;
 
 public class R extends JFrame implements ActionListener
@@ -21,7 +21,6 @@ public class R extends JFrame implements ActionListener
     	
         setSize(700, 500);       //Taille de fenetre
         setTitle("Bouton");      // Nom de la fentre
-        
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         
         fenetre = new JFrame("Ma premiere fenetre");
@@ -35,8 +34,10 @@ public class R extends JFrame implements ActionListener
         //panoe.setLayout(new GridLayout(1,1));
         jouer = new JButton("jouer");
         quitter = new JButton("quitter");
-        jouer.addActionListener(this);  // Fait que le bouton attend une action
-        quitter.addActionListener(this);   // Fait que le bouton attend une action
+        
+       
+		jouer.addActionListener(new TraitementBut1());  // Fait que le bouton attend une action
+        quitter.addActionListener(new TraitementBut2());   // Fait que le bouton attend une action
         
         // Permet de choisir la taille et l'emplacement des bouton et de la fenetre
         jouer.setBounds(50, 200, 100, 100);
@@ -70,12 +71,35 @@ public class R extends JFrame implements ActionListener
  
         
     }
+    public  class   TraitementBut1 implements   ActionListener
+    {
+         /**
+         * obligatoire car test implémente l'interface ActionListener
+         */
+        public  void    actionPerformed(ActionEvent e)
+        {
+        	 M.ecran.setVisible(true);
+        	 fenetre.dispose();
+        	 M.ecran.setResizable(false);
+        }
+    }
+    
+     public  class   TraitementBut2 implements   ActionListener
+    {
+         /**
+         * obligatoire car test implémente l'interface ActionListener
+         */
+        public  void    actionPerformed(ActionEvent e)
+        {
+        	 fenetre.dispose();
+            
+        }
+    }
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		
 	}
-
-	
 }
+     
