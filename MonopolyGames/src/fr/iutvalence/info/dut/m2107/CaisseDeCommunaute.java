@@ -9,11 +9,16 @@ package fr.iutvalence.info.dut.m2107;
 public class CaisseDeCommunaute extends Case {
 
 	/**
-	 * Method to draw a card "Caisse de CommunautÃ©"
+	 * Method to draw a card "Caisse de Communauté"
 	 */
-	public void tirerCarte() {
-		// TODO - implement CaisseDeCommunautï¿½.tirerCarte
-		throw new UnsupportedOperationException();
+	public void tirerCarte() 
+	{
+		
+	}
+	
+	public CaisseDeCommunaute()
+	{
+		
 	}
 
 }

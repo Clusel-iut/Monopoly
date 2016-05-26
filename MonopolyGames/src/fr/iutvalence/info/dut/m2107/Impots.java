@@ -16,10 +16,13 @@ public class Impots extends Case {
 	 * Method to pay taxes
 	 */
 	public void payer() {
-		// TODO - implement Impots.payer
-		throw new UnsupportedOperationException();
+	
 	}
 
+	public Impots()
+	{
+		
+	}
 	
 	/**
 	 * Get some of ???

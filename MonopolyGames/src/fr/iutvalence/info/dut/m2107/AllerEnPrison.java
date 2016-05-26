@@ -12,8 +12,7 @@ public class AllerEnPrison extends Case {
 	 * Method to go to jail
 	 */
 	public void allerEnPrison() {
-		// TODO - implement AllerEnPrison.allerEnPrison
-		throw new UnsupportedOperationException();
+		
 	}
 
 }

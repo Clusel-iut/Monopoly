@@ -15,5 +15,10 @@ public class Prison extends Case {
 	 * Represents the number of players in jail
 	 */
 	private int nb_prisonniers;
+	
+	public Prison()
+	{
+		
+	}
 
 }

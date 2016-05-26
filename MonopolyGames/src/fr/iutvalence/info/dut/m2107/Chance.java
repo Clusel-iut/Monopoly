@@ -15,5 +15,9 @@ public class Chance extends Case {
 		// TODO - implement Chance.tirerCarte
 		throw new UnsupportedOperationException();
 	}
-
+	
+	public Chance()
+	{
+		
+	}
 }

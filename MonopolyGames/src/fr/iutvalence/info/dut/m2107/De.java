@@ -76,7 +76,7 @@ public class De {
 	}
 
 	/**
-	 * @return th value of <advance>
+	 * @return the value of <advance>
 	 */
 	public int getAdvance()
 	{

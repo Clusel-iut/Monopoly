@@ -11,24 +11,37 @@ public class Case {
 	/**
 	 * The type of the case
 	 */
-	private int type;
+	protected String type;
 	
 	/**
 	 * Indicates the position of the case on the board
 	 */
-	private double position;
+	protected int position;
 	
 	/**
 	 * The name of the case (can be a place or jail or start or card to draw...)
 	 */
-	private String nom;
+	protected String nom;
 
 	/**
 	 * Method to get the type of the case
 	 */
-	public void getType() {
-		// TODO - implement Case.getType
-		throw new UnsupportedOperationException();
+	public String getType() 
+	{
+		return this.type;		
 	}
+	
+	public String getName()
+	{
+		return this.nom;
+	}
+	
+	public int getPosition()
+	{
+		return this.position;
+	}
+	
+	
+	
 
 }

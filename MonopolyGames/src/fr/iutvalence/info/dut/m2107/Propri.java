@@ -7,15 +7,11 @@ package fr.iutvalence.info.dut.m2107;
  */
 public class Propri extends Case {
 	
-	/**
-	 * Says if the property is buy, free or being acquired
-	 */
-	private int type;
 	
 	/**
 	 * Says the name of player who have the property
 	 */
-	private String proprietaire;
+	private Joueur proprietaire;
 	
 	/**
 	 * Says the price property
@@ -30,17 +26,27 @@ public class Propri extends Case {
 	/**
 	 * Represents a property buy by a player 
 	 */
-	public void getProprietaire() {
-		// TODO - implement Propri�t�.getPropri�taire
-		throw new UnsupportedOperationException();
+	public Joueur getProprietaire() 
+	{
+		return this.proprietaire;
 	}
 
 	/**
 	 * Represents the pay of player
 	 */
-	public void payerLoyer() {
-		// TODO - implement Propri�t�.payerLoyer
-		throw new UnsupportedOperationException();
+	public void payerLoyer() 
+	{
+		
 	}
+	
+	public Propri(String thetype, int position, int PriceForBuy, int Fine , Joueur Propri)
+	{
+		this.nom=thetype;
+		this.position= position;
+		this.prix_achat=PriceForBuy;
+		this.prix_loyer=Fine;
+		this.proprietaire=Propri;
+	}
+	
 
 }

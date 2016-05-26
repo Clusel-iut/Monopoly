@@ -10,4 +10,12 @@ package fr.iutvalence.info.dut.m2107;
 public class Gare extends Propri {
 	
 	
+	public Gare(int position, Joueur Propri)
+	
+	{
+		super( "Gare",  position,  250, 100, Propri);
+		
+	}
+	
+	
 }

@@ -12,15 +12,27 @@ public class Depart extends Case {
 	 * The money's value to give to a player
 	 */
 	private int somme;
+	
+	public String start="Depart";
+	public int startposition=0;
+	public String namestart="Depart";
+	
+	
+	public Depart()
+	{
+		this.type = start;
+		this.position = startposition;
+		this.nom = namestart;
+	}
+	
 
 	/**
 	 * Method to give money to the player
 	 */
-	public void verserArgent()
-	
+	public void verserArgent()	
 	{
 		
-		throw new UnsupportedOperationException();
+		
 	}
 
 
@@ -29,17 +41,17 @@ public class Depart extends Case {
 	 * @return somme
 	 */
 	public int getSomme()
-	{
+		{
 		return somme;
-	}
+		}
 
 	/**
 	 * Method to set the money of ???
 	 * @param somme
 	 */
 	public void setSomme(int somme)
-	{
+		{
 		this.somme = somme;
-	}
+		}
 
 }
