@@ -9,16 +9,16 @@ package fr.iutvalence.info.dut.m2107;
 public class CaisseDeCommunaute extends Case {
 
 	/**
-	 * Method to draw a card "Caisse de Communauté"
+	 * Method to draw a card "Caisse de Communautï¿½"
 	 */
 	public void tirerCarte() 
 	{
 		
 	}
 	
-	public CaisseDeCommunaute()
+	public CaisseDeCommunaute(int position)
 	{
-		
+		this.position=position;
 	}
 
 }

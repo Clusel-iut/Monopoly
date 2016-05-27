@@ -16,8 +16,8 @@ public class Chance extends Case {
 		throw new UnsupportedOperationException();
 	}
 	
-	public Chance()
+	public Chance(int position)
 	{
-		
+		this.position=position;
 	}
 }
