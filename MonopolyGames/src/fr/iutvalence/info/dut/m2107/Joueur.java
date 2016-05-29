@@ -31,7 +31,7 @@ public class Joueur {
 	/**
 	 * Money
 	 */
-	private Argent money;
+	private int money;
 
 	/**
 	 * Method to initialize a player
@@ -40,8 +40,7 @@ public class Joueur {
 		
 		this.nom=Nom;
 		this.prenom=Prenom;
-		this.position=Case.start;
-		this.money=1500;
+		this.money=Argent.DEFAULT_MONEY;
 		
 	
 		

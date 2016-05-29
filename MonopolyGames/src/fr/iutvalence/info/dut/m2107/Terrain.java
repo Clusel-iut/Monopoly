@@ -37,7 +37,7 @@ public class Terrain extends Propri {
 	 * It's the player who have the case
 	 * He is null if nobody have the case
 	 */
-	protected Joueur PropriÃ©taire;
+	protected Joueur Propriétaire;
 	
 	/**
 	 * It's the name of the case
@@ -73,11 +73,11 @@ public class Terrain extends Propri {
 	 */
 	public Terrain(int LePrix, int LeLoyer, int LePrixMaison, Joueur Proprio, String  NomCasse, int LaPosition, int TypeCase, int GroupeCase)
 	{
-		
+		super(LePrix, LaPosition, LePrixMaison, LeLoyer, Proprio);
 		this.prix_construire=LePrix;
 		this.loyer=LeLoyer;
 		this.PrixMaison=LePrixMaison;
-		this.PropriÃ©taire=Proprio;
+		this.Propriétaire=Proprio;
 		this.NomCase=NomCasse;
 		this.Position=LaPosition;
 		this.CaseType=TypeCase;
@@ -183,7 +183,7 @@ public class Terrain extends Propri {
 	     */
 	    public Joueur getCaseProprietaire()
 	    {
-	        return (this.PropriÃ©taire);
+	        return (this.Propriétaire);
 	    }
 
 	    /**
@@ -191,7 +191,7 @@ public class Terrain extends Propri {
 	     */
 	    public void setCaseProprietaire(Joueur CaseProprio)
 	    {
-	        PropriÃ©taire=CaseProprio;
+	        Propriétaire=CaseProprio;
 	    }
 
 	    /**
@@ -199,7 +199,7 @@ public class Terrain extends Propri {
 	     */
 	    public boolean estaVendre()
 	    {
-	        return (this.PropriÃ©taire==null);
+	        return (this.Propriétaire==null);
 	    }
 
 	    public String getCaseName()

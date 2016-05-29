@@ -1,16 +1,10 @@
 package fr.iutvalence.info.dut.m2107;
 /**
  * 
- * 
- * 
- * ??? extends Pion ???
- * 
- * 
- * 
  * @author Portable
  *
  */
-public class Partie extends Pion {
+public class Partie {
 
 	private int nb_joueur;
 	private Banque banque;

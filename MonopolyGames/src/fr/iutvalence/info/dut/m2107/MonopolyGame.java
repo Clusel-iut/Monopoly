@@ -57,7 +57,7 @@ public class MonopolyGame
 		this.plateau[6] = new Propri("Vaugirard", 6, 100, 150, this.Players.get(1));
 		this.plateau[7] = new Chance(7);
 		this.plateau[8] = new Propri("Coucelles", 8, 100, 150, this.Players.get(1));
-		this.plateau[9] = new Propri("RÃ©publique", 9, 120, 200, this.Players.get(1));
+		this.plateau[9] = new Propri("République", 9, 120, 200, this.Players.get(1));
 		this.plateau[10] = new Propri("SimpleVisite", 10, 50, 100, this.Players.get(1));
 		this.plateau[11] = new Propri("La Villette", 11, 140, 300, this.Players.get(1));
 		this.plateau[12] = new Impots();
@@ -74,7 +74,7 @@ public class MonopolyGame
 		this.plateau[23] = new Propri("Malesherbes", 23, 220, 500, this.Players.get(1));
 		this.plateau[24] = new Propri("Henri-Martin", 24, 240, 550, this.Players.get(1));
 		this.plateau[25] = new Gare(25,this.Players.get(1));
-		this.plateau[26] = new Propri("Saint-Honorï¿½", 26, 260, 600, this.Players.get(1));
+		this.plateau[26] = new Propri("Saint-Honoré", 26, 260, 600, this.Players.get(1));
 		this.plateau[27] = new Propri("La Bourse", 27, 260, 600, this.Players.get(1));
 		this.plateau[28] = new Impots();
 		this.plateau[29] = new Propri("La Fayette", 29, 280, 650, this.Players.get(1));
@@ -129,11 +129,11 @@ public class MonopolyGame
 			
 			
 			i++;
-			if player[i] == loose
+/*			if player[i] == loose
 					this.Players.remove(i);
 					this.NbOfCurrentPlayer = this.Players.size();
 			if i = NbOfCurrentPlayer
-					i = 0;
+					i = 0;   */
 		}
 						
 		
@@ -142,17 +142,17 @@ public class MonopolyGame
 	/**
 	 * @return
 	 */
-	public ArrayList getNbOfPlayer()
+	public int getNbOfPlayer()
 	{
-		return this.NbOfPlayer.get();
+		return this.NbOfCurrentPlayer;
 	}
 
 	/**
 	 * @param nbOfPlayer
 	 */
-	public void setNbOfPlayer(ArrayList nbOfPlayer)
+	public void setNbOfPlayer(int nbOfPlayer)
 	{
-		this.NbOfPlayer = nbOfPlayer;
+		this.NbOfCurrentPlayer = nbOfPlayer;
 	}
 
 	

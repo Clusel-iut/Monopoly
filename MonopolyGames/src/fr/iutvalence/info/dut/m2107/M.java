@@ -11,7 +11,7 @@ public class M extends JFrame implements ActionListener
 {
 	
     private String mot;                    // On créé la variable mot
-    private JButton lancerde, acheter, vendre, passertour, actioncase, quitter,pion;       // On créé les deux boutons           
+    private JButton lancerde, acheter, vendre, passertour, actioncase, quitter, pion1, pion2;       // On créé les deux boutons           
     JPanel panneau = new JPanel ();
     JLabel plateau = new JLabel();
     JLabel affichage = new JLabel();
@@ -34,7 +34,7 @@ public class M extends JFrame implements ActionListener
 		
         //Selection d'un image depuis mon ordinateur
         //plateau.setIcon(new ImageIcon(this.getClass().getResource("/s.jpg")));
-        plateau.setIcon(new ImageIcon(("G:\\git\\MonopolyV2\\MonopolyGames\\images\\s.jpg")));
+        plateau.setIcon(new ImageIcon(("C:\\Users\\Portable\\Pictures\\s.jpg")));
         
         panneau = new JPanel(new BorderLayout(40, 50)); // Taille
         //panneau.setLayout(new GridLayout(1,1));
@@ -44,9 +44,11 @@ public class M extends JFrame implements ActionListener
         passertour = new JButton("passertour");
         actioncase = new JButton("actioncase");
         quitter = new JButton("quitter");
-        pion = new JButton("1");
+        pion1 = new JButton("1");
+        pion2 = new JButton("2");
         
-        pion.setBackground(Color.GREEN);
+        pion1.setBackground(Color.GREEN);
+        pion2.setBackground(Color.YELLOW);
         
         // Fait que le bouton attend une action
         lancerde.addActionListener(new TraitementBut1());  
@@ -55,7 +57,8 @@ public class M extends JFrame implements ActionListener
         passertour.addActionListener(new TraitementBut4());
         actioncase.addActionListener(new TraitementBut5());
         quitter.addActionListener(new TraitementBut6());
-        pion.addActionListener(this);
+        pion1.addActionListener(new TraitementBut7());
+        pion2.addActionListener(new TraitementBut8());
         
         // Permet de choisir la taille et l'emplacement des bouton et de la fenetre
         lancerde.setBounds(550, 0, 110, 70);
@@ -64,7 +67,8 @@ public class M extends JFrame implements ActionListener
         passertour.setBounds(550, 270, 110, 70);
         actioncase.setBounds(550, 360, 110, 70);
         quitter.setBounds(550, 450, 110, 70);
-        pion.setBounds(450, 460, 20, 20);
+        pion1.setBounds(450, 460, 20, 20);
+        pion2.setBounds(450-50, 460, 20, 20);
         panneau.setBounds(300, 100, 800, 500);
         ecran.setBounds(300, 100, 800, 550);
         
@@ -76,7 +80,8 @@ public class M extends JFrame implements ActionListener
         panneau.add(passertour);
         panneau.add(actioncase);
         panneau.add(quitter);
-        panneau.add(pion);
+        panneau.add(pion1);
+        panneau.add(pion2);
         panneau.add(plateau);
        
         
@@ -155,6 +160,30 @@ public class M extends JFrame implements ActionListener
           public  void    actionPerformed(ActionEvent e)
           {
           	 ecran.dispose();
+              
+          }
+      }
+      
+      public  class   TraitementBut7 implements   ActionListener
+      {
+           /**
+           * obligatoire car test implémente l'interface ActionListener
+           */
+          public  void    actionPerformed(ActionEvent e)
+          {
+        	  System.out.println("Joueur 1 :");
+              
+          }
+      }
+      
+      public  class   TraitementBut8 implements   ActionListener
+      {
+           /**
+           * obligatoire car test implémente l'interface ActionListener
+           */
+          public  void    actionPerformed(ActionEvent e)
+          {
+        	  System.out.println("Joueur 2 : ");
               
           }
       }
