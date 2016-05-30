@@ -10,8 +10,8 @@ import fr.iutvalence.info.dut.m2107.R.TraitementBut1;
 public class M extends JFrame implements ActionListener
 {
 	
-    private String mot;                    // On créé la variable mot
-    private JButton lancerde, acheter, vendre, passertour, actioncase, quitter, pion1, pion2;       // On créé les deux boutons           
+    private String mot;                    // On crï¿½ï¿½ la variable mot
+    private JButton lancerde, acheter, vendre, passertour, actioncase, quitter, pion1, pion2;       // On crï¿½ï¿½ les deux boutons           
     JPanel panneau = new JPanel ();
     JLabel plateau = new JLabel();
     JLabel affichage = new JLabel();
@@ -34,7 +34,7 @@ public class M extends JFrame implements ActionListener
 		
         //Selection d'un image depuis mon ordinateur
         //plateau.setIcon(new ImageIcon(this.getClass().getResource("/s.jpg")));
-        plateau.setIcon(new ImageIcon(("C:\\Users\\Portable\\Pictures\\s.jpg")));
+        plateau.setIcon(new ImageIcon(("G:\\git\\Monopoly2\\MonopolyGames\\images\\s.jpg")));
         
         panneau = new JPanel(new BorderLayout(40, 50)); // Taille
         //panneau.setLayout(new GridLayout(1,1));
@@ -73,7 +73,7 @@ public class M extends JFrame implements ActionListener
         ecran.setBounds(300, 100, 800, 550);
         
     
-        // Ajoute l'image et les boutons à la fenetre
+        // Ajoute l'image et les boutons ï¿½ la fenetre
         panneau.add(lancerde);
         panneau.add(acheter);
         panneau.add(vendre);
@@ -98,7 +98,7 @@ public class M extends JFrame implements ActionListener
     public  class   TraitementBut1 implements   ActionListener
     {
          /**
-         * obligatoire car test implémente l'interface ActionListener
+         * obligatoire car test implï¿½mente l'interface ActionListener
          */
         public  void    actionPerformed(ActionEvent e)
         {
@@ -109,7 +109,7 @@ public class M extends JFrame implements ActionListener
      public  class   TraitementBut2 implements   ActionListener
     {
          /**
-         * obligatoire car test implémente l'interface ActionListener
+         * obligatoire car test implï¿½mente l'interface ActionListener
          */
         public  void    actionPerformed(ActionEvent e)
         {
@@ -120,7 +120,7 @@ public class M extends JFrame implements ActionListener
      public  class   TraitementBut3 implements   ActionListener
      {
           /**
-          * obligatoire car test implémente l'interface ActionListener
+          * obligatoire car test implï¿½mente l'interface ActionListener
           */
          public  void    actionPerformed(ActionEvent e)
          {
@@ -131,7 +131,7 @@ public class M extends JFrame implements ActionListener
       public  class   TraitementBut4 implements   ActionListener
      {
           /**
-          * obligatoire car test implémente l'interface ActionListener
+          * obligatoire car test implï¿½mente l'interface ActionListener
           */
          public  void    actionPerformed(ActionEvent e)
          {
@@ -143,7 +143,7 @@ public class M extends JFrame implements ActionListener
       public  class   TraitementBut5 implements   ActionListener
       {
            /**
-           * obligatoire car test implémente l'interface ActionListener
+           * obligatoire car test implï¿½mente l'interface ActionListener
            */
           public  void    actionPerformed(ActionEvent e)
           {
@@ -155,7 +155,7 @@ public class M extends JFrame implements ActionListener
       public  class   TraitementBut6 implements   ActionListener
       {
            /**
-           * obligatoire car test implémente l'interface ActionListener
+           * obligatoire car test implï¿½mente l'interface ActionListener
            */
           public  void    actionPerformed(ActionEvent e)
           {
@@ -167,7 +167,7 @@ public class M extends JFrame implements ActionListener
       public  class   TraitementBut7 implements   ActionListener
       {
            /**
-           * obligatoire car test implémente l'interface ActionListener
+           * obligatoire car test implï¿½mente l'interface ActionListener
            */
           public  void    actionPerformed(ActionEvent e)
           {
@@ -179,7 +179,7 @@ public class M extends JFrame implements ActionListener
       public  class   TraitementBut8 implements   ActionListener
       {
            /**
-           * obligatoire car test implémente l'interface ActionListener
+           * obligatoire car test implï¿½mente l'interface ActionListener
            */
           public  void    actionPerformed(ActionEvent e)
           {

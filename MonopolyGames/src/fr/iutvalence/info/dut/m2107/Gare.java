@@ -13,7 +13,7 @@ public class Gare extends Propri {
 	public Gare(int position, Joueur Propri)
 	
 	{
-		super( "Gare",  position,  250, 100, Propri);
+		super("Gare",  position,  250, 100, Propri);
 		
 	}
 	
