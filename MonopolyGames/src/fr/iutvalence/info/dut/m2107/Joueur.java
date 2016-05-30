@@ -32,15 +32,25 @@ public class Joueur {
 	 * Money
 	 */
 	private int money;
+	
+	/**
+	 * Represents the money of all players at the start
+	 * @author cluselm
+	 */
+	public static final int DEFAULT_MONEY=1500;
+	
+	
 
 	/**
 	 * Method to initialize a player
+	 * @param Nom 
+	 * @param Prenom 
 	 */
 	public Joueur(String Nom, String Prenom) {
 		
 		this.nom=Nom;
 		this.prenom=Prenom;
-		this.money=Argent.DEFAULT_MONEY;
+		this.money=DEFAULT_MONEY;
 		
 	
 		
@@ -99,17 +109,40 @@ public class Joueur {
 		
 	}
 	
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
 	public String getLastname()
 	{
 		return this.nom;
 	}
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
 	public String getName()
 	{
 		return this.prenom;
 	}
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
 	public int getMoney()
 	{
 		return this.money;
+	}
+
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
+	public boolean homeless()
+	{
+		if (this.money <= 0)
+			return true;
+		return false;
 	}
 
 }

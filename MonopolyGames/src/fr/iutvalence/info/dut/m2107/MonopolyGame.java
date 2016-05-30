@@ -93,6 +93,10 @@ public class MonopolyGame
 		
 	}
 	
+	
+	/**
+	 * 
+	 */
 	private int position;
 	
 	/**
@@ -117,7 +121,6 @@ public class MonopolyGame
 	public void Play()
 	{
 		
-		Joueur currentplayer = this.Players.get(0);
 		int i=0;
 		while (i <= this.NbOfCurrentPlayer)
 		{	
@@ -133,30 +136,37 @@ public class MonopolyGame
 			}
 			if (lacase.getPosition() == 2 || lacase.getPosition() == 17 || lacase.getPosition() == 33)
 			{
-				//action de la case communauté
+				//action de la case communaute
 				break;
 				
 			}
-			if (lacase.getProprietaire() == null)
+			else if (lacase.getProprietaire() == null)
 			{
 				//ask to buy
 				break;
 				
 			}
-			if (lacase.getProprietaire() != null)
+			else if (lacase.getProprietaire() != null)
 			{
-				//the player buy the fine (loyer)
+				//the player buy the rent (loyer)
 				break;
 				
 			}
-			 			
+			
+			if (this.Players.get(i).homeless())
+			{
+				this.Players.remove(i);
+				this.NbOfCurrentPlayer = this.Players.size();
+			}
 			
 			i++;
-/*			if player[i] == loose
-					this.Players.remove(i);
-					this.NbOfCurrentPlayer = this.Players.size();
-			if i = NbOfCurrentPlayer
-					i = 0;   */
+			
+			if (i == this.NbOfCurrentPlayer)
+			{
+				i = 0;
+			}
+					   
+			
 		}
 						
 		
@@ -165,6 +175,7 @@ public class MonopolyGame
 	/**
 	 * @return
 	 */
+	@SuppressWarnings("javadoc")
 	public int getNbOfPlayer()
 	{
 		return this.NbOfCurrentPlayer;
