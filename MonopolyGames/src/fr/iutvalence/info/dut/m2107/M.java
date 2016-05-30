@@ -104,8 +104,8 @@ public class M extends JFrame implements ActionListener
          */
         public  void    actionPerformed(ActionEvent e)
         {
-        	System.out.println("de1 = ");
-        	System.out.println("de2 = ");
+        	System.out.println("de1 = " +De.getValeur_de1());
+        	System.out.println("de2 = " +De.getValeur_de2());
         }
     }
     
