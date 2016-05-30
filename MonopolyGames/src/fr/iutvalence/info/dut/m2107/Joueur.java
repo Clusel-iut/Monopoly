@@ -60,9 +60,10 @@ public class Joueur {
 	 * 
 	 * @param position
 	 */
-	public void Position(int position) {
+	public void Position(int position) 
+	{
 		// TODO - implement Joueur.Position
-		throw new UnsupportedOperationException();
+		
 	}
 
 	/**
@@ -77,25 +78,28 @@ public class Joueur {
 	/**
 	 * The name of the player
 	 */
-	public void entrerNom() {
+	public void entrerNom() 
+	{
 		// TODO - implement Joueur.entrerNom
-		throw new UnsupportedOperationException();
+
 	}
 
 	/**
 	 * Method to move on board
 	 */
-	public void seDeplacer() {
+	public void seDeplacer() 
+	{
 		// TODO - implement Joueur.seD�placer
-		throw new UnsupportedOperationException();
+		
 	}
 
 	/**
 	 * Method to do case's action
 	 */
-	public void action() {
+	public void action() 
+	{
 		// TODO - implement Joueur.action
-		throw new UnsupportedOperationException();
+		
 	}
 
 	/**
