@@ -35,7 +35,8 @@ public class M extends JFrame implements ActionListener
 		
         //Selection d'un image depuis mon ordinateur
         //plateau.setIcon(new ImageIcon(this.getClass().getResource("/s.jpg")));
-        plateau.setIcon(new ImageIcon(("G:\\mesTPs\\POO\\Workspace\\Monopoly\\MonopolyGames\\images\\s.jpg")));
+		//
+        plateau.setIcon(new ImageIcon(("G:\\git\\Monopoly2\\MonopolyGames\\images\\s.jpg")));
         
         panneau = new JPanel(new BorderLayout(40, 50)); // Taille
         //panneau.setLayout(new GridLayout(1,1));
