@@ -11,11 +11,11 @@ public class Joueur {
 	/**
 	 * Player's last name
 	 */
-	private String nom;
+	private final String nom;
 	/**
 	 * Player's first name
 	 */
-	private String prenom;
+	private final String prenom;
 	/**
 	 * Identifier of player
 	 */
@@ -97,6 +97,19 @@ public class Joueur {
 		this.position= ((this.position+avancer) % 40);
 		
 		
+	}
+	
+	public String getLastname()
+	{
+		return this.nom;
+	}
+	public String getName()
+	{
+		return this.prenom;
+	}
+	public int getMoney()
+	{
+		return this.money;
 	}
 
 }

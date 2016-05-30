@@ -9,7 +9,8 @@ import fr.iutvalence.info.dut.m2107.R.TraitementBut1;
 
 public class M extends JFrame implements ActionListener
 {
-	
+	Joueur joueur1 = new Joueur("Clusel", "Mathieu");
+	Joueur joueur2 = new Joueur("Rey", "Quentin");
     private String mot;                    // On cr�� la variable mot
     private JButton lancerde, acheter, vendre, passertour, actioncase, quitter, pion1, pion2;       // On cr�� les deux boutons           
     JPanel panneau = new JPanel ();
@@ -171,7 +172,7 @@ public class M extends JFrame implements ActionListener
            */
           public  void    actionPerformed(ActionEvent e)
           {
-        	  System.out.println("Joueur 1 :");
+        	  System.out.println("Joueur 1 : "+joueur1.getLastname()+" "+joueur1.getName()+" : "+joueur1.getMoney());
               
           }
       }
@@ -183,7 +184,7 @@ public class M extends JFrame implements ActionListener
            */
           public  void    actionPerformed(ActionEvent e)
           {
-        	  System.out.println("Joueur 2 : ");
+        	  System.out.println("Joueur 2 : "+joueur2.getLastname()+" "+joueur2.getName()+" : "+joueur2.getMoney());
               
           }
       }

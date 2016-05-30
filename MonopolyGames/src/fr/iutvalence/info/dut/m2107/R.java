@@ -18,7 +18,6 @@ public class R extends JFrame implements ActionListener
     
     public R()// Constructeur pde la classe
     {
-    	
         setSize(700, 500);       //Taille de fenetre
         setTitle("Bouton");      // Nom de la fentre
         setDefaultCloseOperation(EXIT_ON_CLOSE);
