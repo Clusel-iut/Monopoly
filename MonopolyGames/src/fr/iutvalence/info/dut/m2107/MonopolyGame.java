@@ -116,7 +116,7 @@ public class MonopolyGame
 	 */	
 	public void Play()
 	{
-		boolean PasFini = false;
+		
 		Joueur currentplayer = this.Players.get(0);
 		int i=0;
 		while (i <= this.NbOfCurrentPlayer)
@@ -124,9 +124,32 @@ public class MonopolyGame
 			this.avancer1 = this.dice.lancerDe();
 			this.Players.get(i).Avancer(this.avancer1);
 			this.position  =  this.Players.get(i).getPosition();
-			Case lacase = this.plateau[this.position];		
-			
-			
+			Propri lacase = (Propri) this.plateau[this.position];		
+			if (lacase.getPosition() == 7 || lacase.getPosition() == 22 || lacase.getPosition() == 36 )
+			{
+				// action de la case chance
+				break;
+				
+			}
+			if (lacase.getPosition() == 2 || lacase.getPosition() == 17 || lacase.getPosition() == 33)
+			{
+				//action de la case communauté
+				break;
+				
+			}
+			if (lacase.getProprietaire() == null)
+			{
+				//ask to buy
+				break;
+				
+			}
+			if (lacase.getProprietaire() != null)
+			{
+				//the player buy the fine (loyer)
+				break;
+				
+			}
+			 			
 			
 			i++;
 /*			if player[i] == loose
