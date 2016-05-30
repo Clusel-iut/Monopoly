@@ -34,7 +34,7 @@ public class M extends JFrame implements ActionListener
 		
         //Selection d'un image depuis mon ordinateur
         //plateau.setIcon(new ImageIcon(this.getClass().getResource("/s.jpg")));
-        plateau.setIcon(new ImageIcon(("G:\\git\\Monopoly2\\MonopolyGames\\images\\s.jpg")));
+        plateau.setIcon(new ImageIcon(("G:\\mesTPs\\POO\\Workspace\\Monopoly\\MonopolyGames\\images\\s.jpg")));
         
         panneau = new JPanel(new BorderLayout(40, 50)); // Taille
         //panneau.setLayout(new GridLayout(1,1));
@@ -68,7 +68,7 @@ public class M extends JFrame implements ActionListener
         actioncase.setBounds(550, 360, 110, 70);
         quitter.setBounds(550, 450, 110, 70);
         pion1.setBounds(450, 460, 20, 20);
-        pion2.setBounds(450-50, 460, 20, 20);
+        pion2.setBounds(450+25, 460, 20, 20);
         panneau.setBounds(300, 100, 800, 500);
         ecran.setBounds(300, 100, 800, 550);
         
@@ -102,7 +102,8 @@ public class M extends JFrame implements ActionListener
          */
         public  void    actionPerformed(ActionEvent e)
         {
-        	System.out.println("Slt");
+        	System.out.println("de1 = ");
+        	System.out.println("de2 = ");
         }
     }
     
