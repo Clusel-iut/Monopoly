@@ -30,7 +30,7 @@ public class Main
 	{
 		// TODO Auto-generated method stub
 		//new MonopolyGame.Play;
-		new R();
+		new IHM_Depart();
 		new M();
 
 	}
