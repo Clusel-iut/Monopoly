@@ -77,9 +77,9 @@ public class IHM_Depart extends JFrame implements ActionListener
          */
         public  void    actionPerformed(ActionEvent e)
         {
-        	 M.ecran.setVisible(true);
+        	 IHM_Joueur.ecran.setVisible(true);
         	 fenetre.dispose();
-        	 M.ecran.setResizable(false);
+        	 IHM_Joueur.ecran.setResizable(false);
         }
     }
     

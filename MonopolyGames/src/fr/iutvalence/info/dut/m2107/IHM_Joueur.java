@@ -5,9 +5,9 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
-import fr.iutvalence.info.dut.m2107.R.TraitementBut1;
 
-public class M extends JFrame implements ActionListener
+
+public class IHM_Joueur extends JFrame implements ActionListener
 {
 	Joueur joueur1 = new Joueur("Clusel", "Mathieu");
 	Joueur joueur2 = new Joueur("Rey", "Quentin");
@@ -23,7 +23,7 @@ public class M extends JFrame implements ActionListener
     //JLabel pionbleu = new JLabel();
     static JFrame ecran;
     
-    public M()// Constructeur pde la classe
+    public IHM_Joueur()// Constructeur pde la classe
     {
     	
         setSize(700, 500);       //Taille de fenetre
@@ -56,15 +56,15 @@ public class M extends JFrame implements ActionListener
         pion2.setBackground(Color.YELLOW);
         
         // Fait que le bouton attend une action
-        lancerde.addActionListener(new TraitementBut1());  
-        acheter.addActionListener(new TraitementBut2());   
-        vendre.addActionListener(new TraitementBut3());
-        passertour.addActionListener(new TraitementBut4());
-        actioncase.addActionListener(new TraitementBut5());
-        quitter.addActionListener(new TraitementBut6());
-        pion1.addActionListener(new TraitementBut7());
-        pion2.addActionListener(new TraitementBut8());
-        banque.addActionListener(new TraitementBut9());
+        lancerde.addActionListener(new TraitementDe());  
+        acheter.addActionListener(new TraitementAchat());   
+        vendre.addActionListener(new TraitementVente());
+        passertour.addActionListener(new TraitementPasserTour());
+        actioncase.addActionListener(new TraitementAction());
+        quitter.addActionListener(new TraitementQuitter());
+        pion1.addActionListener(new TraitementPion1());
+        pion2.addActionListener(new TraitementPion2());
+        banque.addActionListener(new TraitementBanque());
         
         // Permet de choisir la taille et l'emplacement des bouton et de la fenetre
         lancerde.setBounds(550, 0, 110, 70);
@@ -103,7 +103,7 @@ public class M extends JFrame implements ActionListener
         
     }
 
-    public  class   TraitementBut1 implements   ActionListener
+    public  class   TraitementDe implements   ActionListener
     {
          /**
          * obligatoire car test impl�mente l'interface ActionListener
@@ -117,7 +117,7 @@ public class M extends JFrame implements ActionListener
         }
     }
     
-     public  class   TraitementBut2 implements   ActionListener
+     public  class   TraitementAchat implements   ActionListener
     {
     	 
          /**
@@ -129,7 +129,7 @@ public class M extends JFrame implements ActionListener
         	
         }
     }
-     public  class   TraitementBut3 implements   ActionListener
+     public  class   TraitementVente implements   ActionListener
      {
           /**
           * obligatoire car test impl�mente l'interface ActionListener
@@ -140,7 +140,7 @@ public class M extends JFrame implements ActionListener
          }
      }
      
-      public  class   TraitementBut4 implements   ActionListener
+      public  class   TraitementPasserTour implements   ActionListener
      {
           /**
           * obligatoire car test impl�mente l'interface ActionListener
@@ -152,7 +152,7 @@ public class M extends JFrame implements ActionListener
          }
      }
       
-      public  class   TraitementBut5 implements   ActionListener
+      public  class   TraitementAction implements   ActionListener
       {
            /**
            * obligatoire car test impl�mente l'interface ActionListener
@@ -164,7 +164,7 @@ public class M extends JFrame implements ActionListener
           }
       }
       
-      public  class   TraitementBut6 implements   ActionListener
+      public  class   TraitementQuitter implements   ActionListener
       {
            /**
            * obligatoire car test impl�mente l'interface ActionListener
@@ -176,7 +176,7 @@ public class M extends JFrame implements ActionListener
           }
       }
       
-      public  class   TraitementBut7 implements   ActionListener
+      public  class   TraitementPion1 implements   ActionListener
       {
            /**
            * obligatoire car test impl�mente l'interface ActionListener
@@ -188,7 +188,7 @@ public class M extends JFrame implements ActionListener
           }
       }
       private int i=1;
-      public  class   TraitementBut8 implements   ActionListener
+      public  class   TraitementPion2 implements   ActionListener
       {
            /**
            * obligatoire car test impl�mente l'interface ActionListener
@@ -201,7 +201,7 @@ public class M extends JFrame implements ActionListener
           }
       }
       
-      public  class   TraitementBut9 implements   ActionListener
+      public  class   TraitementBanque implements   ActionListener
       {
            /**
            * obligatoire car test impl�mente l'interface ActionListener
@@ -209,7 +209,7 @@ public class M extends JFrame implements ActionListener
           public  void    actionPerformed(ActionEvent e)
           {
         	  
-        	  System.out.println("La banque possède actuellement : "+Labanque.getBankMoney());
+        	  System.out.println("La banque possede actuellement : "+Labanque.getBankMoney());
               
           }
       }

@@ -31,7 +31,7 @@ public class Main
 		// TODO Auto-generated method stub
 		//new MonopolyGame.Play;
 		new IHM_Depart();
-		new M();
+		new IHM_Joueur();
 
 	}
 
