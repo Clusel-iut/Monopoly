@@ -12,6 +12,7 @@ public class M extends JFrame implements ActionListener
 	Joueur joueur1 = new Joueur("Clusel", "Mathieu");
 	Joueur joueur2 = new Joueur("Rey", "Quentin");
 	De mon_de = new De();
+	Banque Labanque = new Banque();
     private String mot;                    // On cr�� la variable mot
     private JButton lancerde, acheter, vendre, passertour, actioncase, quitter, pion1, pion2;       // On cr�� les deux boutons           
     JPanel panneau = new JPanel ();
@@ -108,7 +109,7 @@ public class M extends JFrame implements ActionListener
         	mon_de.lancerDe();
         	System.out.println("de1 = " +mon_de.getValeur_de1());
         	System.out.println("de2 = " +mon_de.getValeur_de2());
-        	System.out.println("Le joueur avance de : " +mon_de.getAdvance()+" cases."); 
+        	System.out.println("Le joueur avance de : " +mon_de.getAdvance()+" cases.");
         }
     }
     

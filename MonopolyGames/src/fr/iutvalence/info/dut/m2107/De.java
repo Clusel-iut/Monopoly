@@ -12,16 +12,16 @@ public class De {
 	/**
 	 * Value of dice 1
 	 */
-	private static int valeur_de1;
+	private int valeur_de1;
 	
 	/**
 	 * Value of dice 2
 	 */
-	private static int valeur_de2;
+	private int valeur_de2;
 	/**
 	 * Value of the sum of the 2dices
 	 */
-	private static int advance;
+	private int advance;
 		
 
 	
@@ -32,14 +32,14 @@ public class De {
 	 * The player advance with the  cases. 
 	 */
 
-	public static int lancerDe() 
+	public int lancerDe() 
 	
 	{
 			
-		valeur_de1 = ((int) (Math.random() * 5 + 1));
-		valeur_de2 = ((int) (Math.random() * 5 + 1));
-		advance = valeur_de1 + valeur_de2;
-		return advance;
+		this.valeur_de1 = ((int) (Math.random() * 6 + 1));
+		this.valeur_de2 = ((int) (Math.random() * 6 + 1));
+		this.advance = this.valeur_de1 + this.valeur_de2;
+		return this.advance;
 		
 	}
 
@@ -62,33 +62,32 @@ public class De {
 	/**
 	 * @return the value of <this.valeur_de2>
 	 */
-	public static int getValeur_de1()
+	public int getValeur_de1()
 	{
-		return valeur_de1;
+		return this.valeur_de1;
 	}
-
 	/**
 	 * @return the value of <this.valeur_de2>
 	 */
-	public static int getValeur_de2()
+	public int getValeur_de2()
 	{
-		return valeur_de2;
+		return this.valeur_de2;
 	}
 
 	/**
 	 * @return the value of <advance>
 	 */
-	public static int getAdvance()
+	public int getAdvance()
 	{
-		return advance;
+		return this.advance;
 	}
 
 	/**
 	 * @param advance
 	 */
-	public static void setAdvance(int advance)
+	public void setAdvance(int advance)
 	{
-		advance = advance;
+		this.advance = advance;
 	}
 
 
