@@ -5,7 +5,7 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
-public class R extends JFrame implements ActionListener
+public class IHM_Depart extends JFrame implements ActionListener
 {
 	
     private String mot;                    // On créé la variable mot
@@ -16,7 +16,7 @@ public class R extends JFrame implements ActionListener
     JLabel affichage = new JLabel();
     JFrame fenetre;
     
-    public R()// Constructeur pde la classe
+    public IHM_Depart()// Constructeur pde la classe
     {
         setSize(700, 500);       //Taille de fenetre
         setTitle("Bouton");      // Nom de la fentre
@@ -35,8 +35,8 @@ public class R extends JFrame implements ActionListener
         quitter = new JButton("quitter");
         
        
-		jouer.addActionListener(new TraitementBut1());  // Fait que le bouton attend une action
-        quitter.addActionListener(new TraitementBut2());   // Fait que le bouton attend une action
+		jouer.addActionListener(new TraitementJouer());  // Fait que le bouton attend une action
+        quitter.addActionListener(new TraitementQuitter());   // Fait que le bouton attend une action
         
         // Permet de choisir la taille et l'emplacement des bouton et de la fenetre
         jouer.setBounds(50, 200, 100, 100);
@@ -70,7 +70,7 @@ public class R extends JFrame implements ActionListener
  
         
     }
-    public  class   TraitementBut1 implements   ActionListener
+    public  class   TraitementJouer implements   ActionListener
     {
          /**
          * obligatoire car test implémente l'interface ActionListener
@@ -83,7 +83,7 @@ public class R extends JFrame implements ActionListener
         }
     }
     
-     public  class   TraitementBut2 implements   ActionListener
+     public  class   TraitementQuitter implements   ActionListener
     {
          /**
          * obligatoire car test implémente l'interface ActionListener
