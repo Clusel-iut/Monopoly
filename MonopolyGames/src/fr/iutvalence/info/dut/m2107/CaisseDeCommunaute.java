@@ -7,14 +7,18 @@ package fr.iutvalence.info.dut.m2107;
  *
  */
 public class CaisseDeCommunaute extends Case {
+	
+	public static int carte;
 
 	/**
 	 * Method to draw a card "Caisse de Communaut�"
 	 */
-	public void tirerCarte() 
+	public int tirerCarteChance() 
 	{
-		
+		carte = (int) (Math.random() * 5 + 1);
+		return carte;		
 	}
+		
 	
 	public CaisseDeCommunaute(int position)
 	{

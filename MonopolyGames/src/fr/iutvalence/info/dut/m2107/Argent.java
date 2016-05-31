@@ -15,15 +15,9 @@ public class Argent
 	 * Represent the money
 	 * @author cluselm
 	 */
-	private int money;
-		
-	
-	/**
-	 * Represents the money of all players at the start
-	 * @author cluselm
-	 */
-	public static final int DEFAULT_MONEY=1500;
-	
+	private static int money;
+			
+
 	/**
 	 * represents the money of the player 1
 	 * @author cluselm
@@ -43,7 +37,7 @@ public class Argent
 	 */
 	public Argent()
 	{
-		this.money=DEFAULT_MONEY;
+		this.money=Joueur.DEFAULT_MONEY;
 	}
 	
 	
@@ -66,23 +60,22 @@ public class Argent
 	/**
 	 * @param money
 	 * @author cluselm
+	 * @param amount 
 	 */
-	public void addMoney(int amount)
+	public static void addMoney(int amount)
 	{
 		money += amount;		
 	}
 	
-	public void deleteMoney(int amount)
+	/**
+	 * @param amount
+	 */
+	public static void deleteMoney(int amount)
 	{
 		money -= amount;
 	}
 	
-	public boolean becomeSDF()
-	{
-		if (this.money <0)
-			return false;
-		return true;
-	}
+	
 
 
 	

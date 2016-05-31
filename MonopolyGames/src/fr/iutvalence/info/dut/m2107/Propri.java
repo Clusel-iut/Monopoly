@@ -11,7 +11,7 @@ public class Propri extends Case {
 	/**
 	 * Says the name of player who have the property
 	 */
-	private Joueur proprietaire;
+	private static Joueur proprietaire;
 	
 	/**
 	 * Says the price property
@@ -23,13 +23,7 @@ public class Propri extends Case {
 	 */
 	private int prix_loyer;
 
-	/**
-	 * Represents a property buy by a player 
-	 */
-	public Joueur getProprietaire() 
-	{
-		return this.proprietaire;
-	}
+	
 
 	/**
 	 * Represents the pay of player
@@ -45,8 +39,34 @@ public class Propri extends Case {
 		this.position= position;
 		this.prix_achat=PriceForBuy;
 		this.prix_loyer=Fine;
-		this.proprietaire=Propri;
+		this.setProprietaire(Propri);
 	}
+
+	public int getPrix_achat() 
+	{
+		return prix_achat;
+	}
+	
+	public int getPrix_Loyer() 
+	{
+		return prix_loyer;
+	}
+
+	
+	/**
+	 * Represents a property buy by a player 
+	 */
+	public Joueur getProprietaire() {
+		return proprietaire;
+	}
+
+	public static void setProprietaire(Joueur newproprietaire) 
+	{
+		proprietaire = newproprietaire;
+	}
+
+	
+	
 	
 
 }

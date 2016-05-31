@@ -32,15 +32,25 @@ public class Joueur {
 	 * Money
 	 */
 	private int money;
+	
+	/**
+	 * Represents the money of all players at the start
+	 * @author cluselm
+	 */
+	public static final int DEFAULT_MONEY=1500;
+	
+	
 
 	/**
 	 * Method to initialize a player
+	 * @param Nom 
+	 * @param Prenom 
 	 */
 	public Joueur(String Nom, String Prenom) {
 		
 		this.nom=Nom;
 		this.prenom=Prenom;
-		this.money=Argent.DEFAULT_MONEY;
+		this.money=DEFAULT_MONEY;
 		
 	
 		
@@ -50,9 +60,10 @@ public class Joueur {
 	 * 
 	 * @param position
 	 */
-	public void Position(int position) {
+	public void Position(int position) 
+	{
 		// TODO - implement Joueur.Position
-		throw new UnsupportedOperationException();
+		
 	}
 
 	/**
@@ -67,25 +78,28 @@ public class Joueur {
 	/**
 	 * The name of the player
 	 */
-	public void entrerNom() {
+	public void entrerNom() 
+	{
 		// TODO - implement Joueur.entrerNom
-		throw new UnsupportedOperationException();
+
 	}
 
 	/**
 	 * Method to move on board
 	 */
-	public void seDeplacer() {
+	public void seDeplacer() 
+	{
 		// TODO - implement Joueur.seD�placer
-		throw new UnsupportedOperationException();
+		
 	}
 
 	/**
 	 * Method to do case's action
 	 */
-	public void action() {
+	public void action() 
+	{
 		// TODO - implement Joueur.action
-		throw new UnsupportedOperationException();
+		
 	}
 
 	/**
@@ -99,17 +113,40 @@ public class Joueur {
 		
 	}
 	
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
 	public String getLastname()
 	{
 		return this.nom;
 	}
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
 	public String getName()
 	{
 		return this.prenom;
 	}
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
 	public int getMoney()
 	{
 		return this.money;
+	}
+
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
+	public boolean homeless()
+	{
+		if (this.money <= 0)
+			return true;
+		return false;
 	}
 
 }

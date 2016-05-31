@@ -7,15 +7,19 @@ package fr.iutvalence.info.dut.m2107;
  *
  */
 public class Chance extends Case {
+	
+	public static int carte;
 
 	/**
 	 * Method to draw a card "Chance"
+	 * Return a int
 	 */
-	public void tirerCarte() {
-		// TODO - implement Chance.tirerCarte
-		throw new UnsupportedOperationException();
+	public static int tirerCarteChance() 
+	{
+		carte = (int) (Math.random() * 2 + 1);
+		return carte;		
 	}
-	
+		
 	public Chance(int position)
 	{
 		this.position=position;

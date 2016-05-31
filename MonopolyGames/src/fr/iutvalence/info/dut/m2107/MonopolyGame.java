@@ -57,10 +57,10 @@ public class MonopolyGame
 		this.plateau[6] = new Propri("Vaugirard", 6, 100, 150, this.Players.get(1));
 		this.plateau[7] = new Chance(7);
 		this.plateau[8] = new Propri("Coucelles", 8, 100, 150, this.Players.get(1));
-		this.plateau[9] = new Propri("République", 9, 120, 200, this.Players.get(1));
+		this.plateau[9] = new Propri("Republique", 9, 120, 200, this.Players.get(1));
 		this.plateau[10] = new Propri("SimpleVisite", 10, 50, 100, this.Players.get(1));
 		this.plateau[11] = new Propri("La Villette", 11, 140, 300, this.Players.get(1));
-		this.plateau[12] = new Impots();
+		this.plateau[12] = new Impots(600);
 		this.plateau[13] = new Propri("Neuilly", 13, 140, 300, this.Players.get(1));
 		this.plateau[14] = new Propri("Paradis", 14, 160, 350, this.Players.get(1));
 		this.plateau[15] = new Gare(15,this.Players.get(1));
@@ -74,9 +74,9 @@ public class MonopolyGame
 		this.plateau[23] = new Propri("Malesherbes", 23, 220, 500, this.Players.get(1));
 		this.plateau[24] = new Propri("Henri-Martin", 24, 240, 550, this.Players.get(1));
 		this.plateau[25] = new Gare(25,this.Players.get(1));
-		this.plateau[26] = new Propri("Saint-Honoré", 26, 260, 600, this.Players.get(1));
+		this.plateau[26] = new Propri("Saint-Honore", 26, 260, 600, this.Players.get(1));
 		this.plateau[27] = new Propri("La Bourse", 27, 260, 600, this.Players.get(1));
-		this.plateau[28] = new Impots();
+		this.plateau[28] = new Impots(500);
 		this.plateau[29] = new Propri("La Fayette", 29, 280, 650, this.Players.get(1));
 		this.plateau[30] = new AllerEnPrison();
 		this.plateau[31] = new Propri("Breteuil", 31, 300, 700, this.Players.get(1));
@@ -93,6 +93,10 @@ public class MonopolyGame
 		
 	}
 	
+	
+	/**
+	 * 
+	 */
 	private int position;
 	
 	/**
@@ -117,46 +121,88 @@ public class MonopolyGame
 	public void Play()
 	{
 		
-		Joueur currentplayer = this.Players.get(0);
-		int i=0;
+		int i=0;		
+		int valeur_carte=0;		
 		while (i <= this.NbOfCurrentPlayer)
 		{	
-			this.avancer1 = this.dice.lancerDe();
-			this.Players.get(i).Avancer(this.avancer1);
-			this.position  =  this.Players.get(i).getPosition();
-			Propri lacase = (Propri) this.plateau[this.position];		
+			this.avancer1 = this.dice.lancerDe();			
+			this.Players.get(i).Avancer(this.avancer1);			
+			this.position  =  this.Players.get(i).getPosition();			
+			Propri lacase = (Propri) this.plateau[this.position];			
 			if (lacase.getPosition() == 7 || lacase.getPosition() == 22 || lacase.getPosition() == 36 )
 			{
-				// action de la case chance
-				break;
-				
+				valeur_carte=Chance.tirerCarteChance();				
+				if ( valeur_carte == 1)
+				{
+					this.Players.get(i).getPosition() = AllerEnPrison();
+				}				
+				if ( valeur_carte == 2)
+				{
+					this.Players.get(i).getMoney() + addMoney(1200);
+				}				
+				if ( valeur_carte == 3)
+				{
+					this.Players.get(i).getMoney() + deleteMoney(1500);
+				}				
+				break;				
 			}
 			if (lacase.getPosition() == 2 || lacase.getPosition() == 17 || lacase.getPosition() == 33)
 			{
-				//action de la case communauté
-				break;
-				
+				valeur_carte=Chance.tirerCarteChance();				
+				if ( valeur_carte == 1)
+				{
+					this.Players.get(i).getPosition() = AllerEnPrison();
+				}				
+				if ( valeur_carte == 2)
+				{
+					this.Players.get(i).getMoney() + addMoney(1200);
+				}				
+				if ( valeur_carte == 3)
+				{
+					this.Players.get(i).getMoney() + deleteMoney(1500);
+				}				
+				break;				
 			}
-			if (lacase.getProprietaire() == null)
+			else if ((lacase.getProprietaire() == null) || (this.Players.get(i).getMoney() + Argent.deleteMoney(lacase.getPrix_achat())) <= 0 )
 			{
-				//ask to buy
-				break;
-				
+				//ask to buy				
+				//if the player want to be to the owner
+				if ( // he want)
+				{
+					Propri.setProprietaire(this.Players.get(i));
+				}				
+				break;				
 			}
-			if (lacase.getProprietaire() != null)
+			else if (lacase.getProprietaire() != null)
 			{
-				//the player buy the fine (loyer)
-				break;
-				
+				(this.Players.get(i).getMoney() + Argent.deleteMoney(lacase.getPrix_Loyer()));
 			}
-			 			
+			else if (lacase.getPosition() == 30)
+			{
+				this.Players.get(i).getPosition() = AllerEnPrison();
+				continue;
+			}
+			else if (lacase.getPosition() == 28 || (lacase.getPosition()) == 12 )
+			{
+				this.Players.get(i).getMoney().pay(Impots.getSomme());
+			}
+			
+			
+			if (this.Players.get(i).homeless())
+			{
+				this.Players.remove(i);
+				this.NbOfCurrentPlayer = this.Players.size();
+			}
+			
 			
 			i++;
-/*			if player[i] == loose
-					this.Players.remove(i);
-					this.NbOfCurrentPlayer = this.Players.size();
-			if i = NbOfCurrentPlayer
-					i = 0;   */
+			
+			if (i == this.NbOfCurrentPlayer)
+			{
+				i = 0;
+			}
+					   
+			
 		}
 						
 		
@@ -165,6 +211,7 @@ public class MonopolyGame
 	/**
 	 * @return
 	 */
+	@SuppressWarnings("javadoc")
 	public int getNbOfPlayer()
 	{
 		return this.NbOfCurrentPlayer;
