@@ -11,6 +11,7 @@ public class M extends JFrame implements ActionListener
 {
 	Joueur joueur1 = new Joueur("Clusel", "Mathieu");
 	Joueur joueur2 = new Joueur("Rey", "Quentin");
+	De mon_de = new De();
     private String mot;                    // On cr�� la variable mot
     private JButton lancerde, acheter, vendre, passertour, actioncase, quitter, pion1, pion2;       // On cr�� les deux boutons           
     JPanel panneau = new JPanel ();
@@ -104,10 +105,10 @@ public class M extends JFrame implements ActionListener
          */
         public  void    actionPerformed(ActionEvent e)
         {
-        	De.lancerDe();
-        	System.out.println("de1 = " +De.getValeur_de1());
-        	System.out.println("de2 = " +De.getValeur_de2());
-        	System.out.println("Le joueur avance de : " +De.getAdvance()+" cases.");
+        	mon_de.lancerDe();
+        	System.out.println("de1 = " +mon_de.getValeur_de1());
+        	System.out.println("de2 = " +mon_de.getValeur_de2());
+        	System.out.println("Le joueur avance de : " +mon_de.getAdvance()+" cases.");
         }
     }
     
@@ -180,7 +181,7 @@ public class M extends JFrame implements ActionListener
               
           }
       }
-      
+      private int i=1;
       public  class   TraitementBut8 implements   ActionListener
       {
            /**
@@ -188,7 +189,8 @@ public class M extends JFrame implements ActionListener
            */
           public  void    actionPerformed(ActionEvent e)
           {
-        	  System.out.println("Joueur 2 : "+joueur2.getLastname()+" "+joueur2.getName()+" : "+joueur2.getMoney());
+        	  
+        	  System.out.println("Joueur 2 : "+MonopolyGame.Players.get(i).getLastname()+" "+MonopolyGame.Players.get(i).getName()+" : "+joueur2.getMoney());
               
           }
       }
@@ -197,7 +199,7 @@ public class M extends JFrame implements ActionListener
 	public void actionPerformed(ActionEvent arg0) {
 		// TODO Auto-generated method stub
 		
-	}      
- 
+	}
+
 }
   
