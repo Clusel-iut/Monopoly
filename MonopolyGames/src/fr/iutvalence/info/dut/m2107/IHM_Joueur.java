@@ -15,6 +15,8 @@ public class IHM_Joueur extends JFrame implements ActionListener
 	Banque Labanque = new Banque();
     private String mot;                    // On cr�� la variable mot
     private JButton lancerde, acheter, vendre, passertour, actioncase, quitter, pion1, pion2, banque;       // On cr�� les deux boutons           
+    public int xPion1 = 0;
+    public int yPion1 = 0;
     JPanel panneau = new JPanel ();
     JLabel plateau = new JLabel();
     JLabel affichage = new JLabel();
@@ -73,8 +75,8 @@ public class IHM_Joueur extends JFrame implements ActionListener
         passertour.setBounds(550, 270, 110, 70);
         actioncase.setBounds(550, 360, 110, 70);
         quitter.setBounds(550, 450, 110, 70);
-        pion1.setBounds(450, 460, 20, 20);
-        pion2.setBounds(450+25, 460, 20, 20);
+        pion1.setBounds(xPion1=xPion1+450, yPion1=yPion1+480, 20, 20);
+        pion2.setBounds(joueur2.xposition, joueur2.yposition-25, 20, 20);
         banque.setBounds(670, 0, 110, 70);
         panneau.setBounds(300, 100, 800, 500);
         ecran.setBounds(300, 100, 800, 550);
@@ -114,20 +116,28 @@ public class IHM_Joueur extends JFrame implements ActionListener
         	System.out.println("de1 = " +mon_de.getValeur_de1());
         	System.out.println("de2 = " +mon_de.getValeur_de2());
         	System.out.println("Le joueur avance de : " +mon_de.getAdvance()+" cases.");
+        	if(xPion1 >=10)
+        	{
+        		pion1.setBounds(xPion1-(44*mon_de.getAdvance()), joueur1.yposition, 20, 20);
+        	}
+        	else
+        	{
+        		pion1.setBounds(xPion1, yPion1-(44*mon_de.getAdvance()), 20, 20);
+        	}
         }
     }
     
      public  class   TraitementAchat implements   ActionListener
     {
-    	 
-         /**
+		/**
          * obligatoire car test impl�mente l'interface ActionListener
          */
         public  void    actionPerformed(ActionEvent e)
         {
         	 joueur1.deleteMoney(500);
-        	
+        	 joueur2.deleteMoney(500*2);
         }
+    	
     }
      public  class   TraitementVente implements   ActionListener
      {
