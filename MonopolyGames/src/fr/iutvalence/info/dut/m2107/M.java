@@ -108,7 +108,7 @@ public class M extends JFrame implements ActionListener
         	mon_de.lancerDe();
         	System.out.println("de1 = " +mon_de.getValeur_de1());
         	System.out.println("de2 = " +mon_de.getValeur_de2());
-        	System.out.println("Le joueur avance de : " +mon_de.getAdvance()+" cases.");
+        	System.out.println("Le joueur avance de : " +mon_de.getAdvance()+" cases."); 
         }
     }
     
