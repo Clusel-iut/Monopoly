@@ -28,17 +28,7 @@ public class Argent
 	 * represents the money of the player 2
 	 * @author cluselm
 	 */
-	private int money_player2;	
-	
-	
-	
-	/**
-	 * This constructor initialize the money for the start of the game
-	 */
-	public Argent()
-	{
-		this.money=Joueur.DEFAULT_MONEY;
-	}
+	private int money_player2;
 	
 	
 	public Argent(int x)
@@ -62,9 +52,9 @@ public class Argent
 	 * @author cluselm
 	 * @param amount 
 	 */
-	public static void addMoney(int amount)
+	public void addMoney(int amount)
 	{
-		money += amount;		
+		this.money += amount;		
 	}
 	
 	/**

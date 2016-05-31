@@ -7,7 +7,19 @@ package fr.iutvalence.info.dut.m2107;
  *
  */
 public class Banque {
+	
+	private static final int DEFAULT_BANK_MONEY = 20000;
 
+	private int bank_money;
+
+	
+	
+
+	public Banque()
+	{
+		this.bank_money=DEFAULT_BANK_MONEY;
+	}
+	
 	/**
 	 * Determines the money that a player has to give by the method verserArgent
 	 */
@@ -18,6 +30,16 @@ public class Banque {
 	 */
 	private int solde;
 
+	
+	
+	
+	
+	public int getBankMoney()
+	{
+		return this.bank_money;
+	}
+	
+	
 	
 	/**
 	 * Method to receive money

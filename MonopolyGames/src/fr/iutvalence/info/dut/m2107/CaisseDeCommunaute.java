@@ -12,8 +12,9 @@ public class CaisseDeCommunaute extends Case {
 
 	/**
 	 * Method to draw a card "Caisse de Communaut�"
+	 * @return 
 	 */
-	public int tirerCarteChance() 
+	public static int tirerCarteCommunaute() 
 	{
 		carte = (int) (Math.random() * 5 + 1);
 		return carte;		

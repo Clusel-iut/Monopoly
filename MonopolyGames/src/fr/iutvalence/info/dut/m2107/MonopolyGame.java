@@ -20,7 +20,7 @@ public class MonopolyGame
 	/**
 	 * player inputs table
 	 */
-	private ArrayList<Joueur> Players;
+	public static ArrayList<Joueur> Players;
 	
 	private Case[] plateau;
 	
@@ -43,7 +43,7 @@ public class MonopolyGame
 	public MonopolyGame()
 	{
 		this.racks = new Rack();
-		this.Players = new ArrayList<Joueur>();	
+		this.Players = new ArrayList<Joueur>();
 		this.Players.add(new Joueur("Clu","jd"));
 		this.Players.add(new Joueur("Rey","Quentin"));
 		this.NbOfCurrentPlayer = this.Players.size() -1;
@@ -52,7 +52,7 @@ public class MonopolyGame
 		this.plateau[1] = new Propri("Belleville", 1, 60, 100, this.Players.get(1));
 		this.plateau[2] = new CaisseDeCommunaute(2);
 		this.plateau[3] = new Propri("Lecourbe", 3, 60, 100, this.Players.get(1));
-		this.plateau[4] = new Impots();
+		this.plateau[4] = new Impots(500);
 		this.plateau[5] = new Gare(5,this.Players.get(1));
 		this.plateau[6] = new Propri("Vaugirard", 6, 100, 150, this.Players.get(1));
 		this.plateau[7] = new Chance(7);
@@ -148,7 +148,7 @@ public class MonopolyGame
 			}
 			if (lacase.getPosition() == 2 || lacase.getPosition() == 17 || lacase.getPosition() == 33)
 			{
-				valeur_carte=Chance.tirerCarteChance();				
+				valeur_carte=CaisseDeCommunaute.tirerCarteCommunaute();				
 				if ( valeur_carte == 1)
 				{
 					this.Players.get(i).getPosition() = AllerEnPrison();

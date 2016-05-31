@@ -14,7 +14,7 @@ public class M extends JFrame implements ActionListener
 	De mon_de = new De();
 	Banque Labanque = new Banque();
     private String mot;                    // On cr�� la variable mot
-    private JButton lancerde, acheter, vendre, passertour, actioncase, quitter, pion1, pion2;       // On cr�� les deux boutons           
+    private JButton lancerde, acheter, vendre, passertour, actioncase, quitter, pion1, pion2, banque;       // On cr�� les deux boutons           
     JPanel panneau = new JPanel ();
     JLabel plateau = new JLabel();
     JLabel affichage = new JLabel();
@@ -48,6 +48,7 @@ public class M extends JFrame implements ActionListener
         passertour = new JButton("passertour");
         actioncase = new JButton("actioncase");
         quitter = new JButton("quitter");
+        banque = new JButton("Banque");
         pion1 = new JButton("1");
         pion2 = new JButton("2");
         
@@ -63,6 +64,7 @@ public class M extends JFrame implements ActionListener
         quitter.addActionListener(new TraitementBut6());
         pion1.addActionListener(new TraitementBut7());
         pion2.addActionListener(new TraitementBut8());
+        banque.addActionListener(new TraitementBut9());
         
         // Permet de choisir la taille et l'emplacement des bouton et de la fenetre
         lancerde.setBounds(550, 0, 110, 70);
@@ -73,6 +75,7 @@ public class M extends JFrame implements ActionListener
         quitter.setBounds(550, 450, 110, 70);
         pion1.setBounds(450, 460, 20, 20);
         pion2.setBounds(450+25, 460, 20, 20);
+        banque.setBounds(670, 0, 110, 70);
         panneau.setBounds(300, 100, 800, 500);
         ecran.setBounds(300, 100, 800, 550);
         
@@ -86,6 +89,7 @@ public class M extends JFrame implements ActionListener
         panneau.add(quitter);
         panneau.add(pion1);
         panneau.add(pion2);
+        panneau.add(banque);
         panneau.add(plateau);
        
         
@@ -115,13 +119,14 @@ public class M extends JFrame implements ActionListener
     
      public  class   TraitementBut2 implements   ActionListener
     {
+    	 
          /**
          * obligatoire car test impl�mente l'interface ActionListener
          */
         public  void    actionPerformed(ActionEvent e)
         {
+        	 joueur1.deleteMoney(500);
         	
-            
         }
     }
      public  class   TraitementBut3 implements   ActionListener
@@ -191,7 +196,20 @@ public class M extends JFrame implements ActionListener
           public  void    actionPerformed(ActionEvent e)
           {
         	  
-        	  System.out.println("Joueur 2 : "+MonopolyGame.Players.get(i).getLastname()+" "+MonopolyGame.Players.get(i).getName()+" : "+joueur2.getMoney());
+        	  System.out.println("Joueur 2 : "+joueur2.getLastname()+" "+joueur2.getName()+" : "+joueur2.getMoney());
+              
+          }
+      }
+      
+      public  class   TraitementBut9 implements   ActionListener
+      {
+           /**
+           * obligatoire car test impl�mente l'interface ActionListener
+           */
+          public  void    actionPerformed(ActionEvent e)
+          {
+        	  
+        	  System.out.println("La banque possède actuellement : "+Labanque.getBankMoney());
               
           }
       }
