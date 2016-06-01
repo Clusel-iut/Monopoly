@@ -10,7 +10,7 @@ public class Impots extends Case {
 	/**
 	 * Represents the value of the taxe
 	 */
-	private static int somme;
+	public int somme;
 
 	/**
 	 * Method to pay taxes
@@ -20,8 +20,13 @@ public class Impots extends Case {
 		//...
 	}
 
-	public Impots(int impot)
+	/**
+	 * @param position
+	 * @param impot
+	 */
+	public Impots(int position, int impot)
 	{
+		this.position = position;
 		this.somme =  impot;
 		
 	}
@@ -30,9 +35,9 @@ public class Impots extends Case {
 	 * Get some of ???
 	 * @return somme
 	 */
-	public static int getSomme()
+	public int getSomme()
 	{
-		return somme;
+		return this.somme;
 	}
 
 	/**

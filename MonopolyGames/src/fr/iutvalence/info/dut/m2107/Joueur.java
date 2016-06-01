@@ -8,9 +8,22 @@ package fr.iutvalence.info.dut.m2107;
 public class Joueur {
 
 	
+	/**
+	 * 
+	 */
 	public static final int DEFAULT_MONEY = 1500;
+	/**
+	 * 
+	 */
 	private static final int DEFAULT_XPOSITION = 450;
+	/**
+	 * 
+	 */
 	private static final int DEFAULT_YPOSITION = 480;
+	/**
+	 * 
+	 */
+	private static final int DEFAULT_PLAYERPOSITIONONTHEBOARD = 0;
 	/**
 	 * Player's last name
 	 */
@@ -27,10 +40,17 @@ public class Joueur {
 	 * Pawn's color
 	 */
 	private int couleur;
+	
+	/**
+	 * 
+	 */
+	public int playerposition;
+	
 	/**
 	 * Player's pawn's position
 	 */
-	public int xposition;
+	public int xposition;	
+	
 	/**
 	 * 
 	 */
@@ -49,21 +69,23 @@ public class Joueur {
 	 */
 	public Joueur(String Nom, String Prenom) {
 		
-		this.nom=Nom;
-		this.prenom=Prenom;
-		this.xposition=DEFAULT_XPOSITION;
-		this.yposition=DEFAULT_YPOSITION;
-		this.money=DEFAULT_MONEY;
-		
+		this.nom = Nom;
+		this.prenom = Prenom;
+		this.xposition = DEFAULT_XPOSITION;
+		this.yposition = DEFAULT_YPOSITION;
+		this.money = DEFAULT_MONEY;
+		this.playerposition = DEFAULT_PLAYERPOSITIONONTHEBOARD;		
 	}
+	
+	
 
 	/**
 	 * 
 	 * @param position
 	 */
-	public void Position(int position) {
-		// TODO - implement Joueur.Position
-		throw new UnsupportedOperationException();
+	public void Position(int position) 
+	{
+		
 	}
 
 	/**
@@ -82,6 +104,25 @@ public class Joueur {
 	{
 		return this.yposition;
 	}
+	
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
+	public int getPlayerPosition() 
+	{
+		return this.playerposition;
+	}	
+	
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
+	public void setPlayerPosition(int newplayerposition) 
+	{
+		this.playerposition = newplayerposition;
+	}
+	
 
 	/**
 	 * The name of the player
@@ -129,12 +170,46 @@ public class Joueur {
 	}
 
 	/**
+	 * @param newmoney
+	 */
+	public void setMoney(int newmoney) 
+	{
+		this.money = newmoney;
+	}
+	
+	/**
+	 * @param amount
+	 */
+	public void addMoney(int amount)
+	{
+		this.money += amount;
+	}
+	
+	/**
 	 * @param amount
 	 */
 	public void deleteMoney(int amount)
 	{
 		this.money -= amount;
 	}
-	
+
+
+
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
+	public boolean homeless()
+	{
+		if ( this.money < 0 )
+		{
+			return true;
+		}
+		return false;
+	}
+
+
+
+
 
 }
