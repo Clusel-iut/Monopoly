@@ -28,11 +28,11 @@ public class IHM_Depart extends JFrame implements ActionListener
 		
         //Selection d'un image depuis mon ordinateur
         //image.setIcon(new ImageIcon(this.getClass().getResource("/l.png")));
-        image.setIcon(new ImageIcon(("G:\\git\\Monopoly2\\MonopolyGames\\images\\l.png")));
+        image.setIcon(new ImageIcon(("G:\\git\\MonopolyV2\\MonopolyGames\\images\\l.png")));
         panoe = new JPanel(new BorderLayout(40, 50)); // Taille
         //panoe.setLayout(new GridLayout(1,1));
-        jouer = new JButton("jouer");
-        quitter = new JButton("quitter");
+        jouer = new JButton("Jouer");
+        quitter = new JButton("Quitter");
         
        
 		jouer.addActionListener(new TraitementJouer());  // Fait que le bouton attend une action

@@ -15,8 +15,8 @@ public class IHM_Joueur extends JFrame implements ActionListener
 	Banque Labanque = new Banque();
     private String mot;                    // On cr�� la variable mot
     private JButton lancerde, acheter, vendre, passertour, actioncase, quitter, pion1, pion2, banque;       // On cr�� les deux boutons           
-    public int xPion1 = 0;
-    public int yPion1 = 0;
+    public int xPion1 = 450;
+    public int yPion1 = 480;
     JPanel panneau = new JPanel ();
     JLabel plateau = new JLabel();
     JLabel affichage = new JLabel();
@@ -40,16 +40,16 @@ public class IHM_Joueur extends JFrame implements ActionListener
         //Selection d'un image depuis mon ordinateur
         //plateau.setIcon(new ImageIcon(this.getClass().getResource("/s.jpg")));
 		//
-        plateau.setIcon(new ImageIcon(("G:\\git\\Monopoly2\\MonopolyGames\\images\\s.jpg")));
+        plateau.setIcon(new ImageIcon(("G:\\git\\MonopolyV2\\MonopolyGames\\images\\s.jpg")));
         
         panneau = new JPanel(new BorderLayout(40, 50)); // Taille
         //panneau.setLayout(new GridLayout(1,1));
-        lancerde = new JButton("lancerde");
-        acheter = new JButton("acheter");
-        vendre = new JButton("vendre");
-        passertour = new JButton("passertour");
-        actioncase = new JButton("actioncase");
-        quitter = new JButton("quitter");
+        lancerde = new JButton("Lancer le dé");
+        acheter = new JButton("Acheter");
+        vendre = new JButton("Vendre");
+        passertour = new JButton("Passer son tour");
+        actioncase = new JButton("Action Case");
+        quitter = new JButton("Quitter le jeu");
         banque = new JButton("Banque");
         pion1 = new JButton("1");
         pion2 = new JButton("2");
@@ -74,8 +74,8 @@ public class IHM_Joueur extends JFrame implements ActionListener
         vendre.setBounds(550, 180, 110, 70);
         passertour.setBounds(550, 270, 110, 70);
         actioncase.setBounds(550, 360, 110, 70);
-        quitter.setBounds(550, 450, 110, 70);
-        pion1.setBounds(xPion1=xPion1+450, yPion1=yPion1+480, 20, 20);
+        quitter.setBounds(670, 450, 110, 70);
+        pion1.setBounds(xPion1, yPion1, 20, 20);
         pion2.setBounds(joueur2.xposition, joueur2.yposition-25, 20, 20);
         banque.setBounds(670, 0, 110, 70);
         panneau.setBounds(300, 100, 800, 500);
@@ -116,13 +116,18 @@ public class IHM_Joueur extends JFrame implements ActionListener
         	System.out.println("de1 = " +mon_de.getValeur_de1());
         	System.out.println("de2 = " +mon_de.getValeur_de2());
         	System.out.println("Le joueur avance de : " +mon_de.getAdvance()+" cases.");
-        	if(xPion1 >=10)
+        	if(xPion1 >10)
         	{
-        		pion1.setBounds(xPion1-(44*mon_de.getAdvance()), joueur1.yposition, 20, 20);
+        		if(xPion1<10)
+        		{
+        			xPion1=10;
+        		}
+        		pion1.setBounds(xPion1=xPion1-(42*mon_de.getAdvance()), yPion1=yPion1, 20, 20);
+        		if(xPion1<10){xPion1=10;}
         	}
-        	else
-        	{
-        		pion1.setBounds(xPion1, yPion1-(44*mon_de.getAdvance()), 20, 20);
+        	else{
+        		
+        		pion1.setBounds(xPion1=xPion1, yPion1=yPion1-(42*mon_de.getAdvance()), 20, 20);
         	}
         }
     }

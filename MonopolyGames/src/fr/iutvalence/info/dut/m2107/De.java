@@ -36,8 +36,8 @@ public class De {
 	
 	{
 			
-		this.valeur_de1 = ((int) (Math.random() * 6 + 1));
-		this.valeur_de2 = ((int) (Math.random() * 6 + 1));
+		this.valeur_de1 = ((int) (Math.random() * 2 + 1));
+		this.valeur_de2 = ((int) (Math.random() * 2 + 1));
 		this.advance = this.valeur_de1 + this.valeur_de2;
 		return this.advance;
 		
