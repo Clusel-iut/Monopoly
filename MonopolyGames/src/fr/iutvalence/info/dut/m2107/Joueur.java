@@ -9,6 +9,8 @@ public class Joueur {
 
 	
 	public static final int DEFAULT_MONEY = 1500;
+	private static final int DEFAULT_XPOSITION = 450;
+	private static final int DEFAULT_YPOSITION = 480;
 	/**
 	 * Player's last name
 	 */
@@ -28,11 +30,12 @@ public class Joueur {
 	/**
 	 * Player's pawn's position
 	 */
-	private int position;
+	public int xposition;
+	public int yposition;
 	/**
 	 * Money
 	 */
-	private static int money;
+	public int money;
 
 	
 
@@ -43,6 +46,8 @@ public class Joueur {
 		
 		this.nom=Nom;
 		this.prenom=Prenom;
+		this.xposition=DEFAULT_XPOSITION;
+		this.yposition=DEFAULT_YPOSITION;
 		this.money=DEFAULT_MONEY;
 		
 	}
@@ -60,9 +65,13 @@ public class Joueur {
 	 * Method to get the position of the player at any time
 	 * @return position
 	 */
-	public int getPosition() 
+	public int getXPosition() 
 	{
-		return this.position;	
+		return this.xposition;
+	}
+	public int getYPosition() 
+	{
+		return this.yposition;
 	}
 
 	/**
@@ -95,7 +104,7 @@ public class Joueur {
 	 */
 	public void Avancer(int avancer)
 	{
-		this.position= ((this.position+avancer) % 40);
+		this.xposition= ((this.xposition+avancer) % 40);
 		
 		
 	}
@@ -115,7 +124,7 @@ public class Joueur {
 
 	public void deleteMoney(int amount)
 	{
-		money -= amount;
+		this.money -= amount;
 	}
 	
 

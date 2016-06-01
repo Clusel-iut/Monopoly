@@ -15,7 +15,7 @@ public class Argent
 	 * Represent the money
 	 * @author cluselm
 	 */
-	private static int money;
+	private int money;
 			
 
 	/**
@@ -60,9 +60,9 @@ public class Argent
 	/**
 	 * @param amount
 	 */
-	public static void deleteMoney(int amount)
+	public void deleteMoney(int amount)
 	{
-		money -= amount;
+		this.money -= amount;
 	}
 	
 	
