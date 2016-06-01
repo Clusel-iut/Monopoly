@@ -31,6 +31,9 @@ public class Joueur {
 	 * Player's pawn's position
 	 */
 	public int xposition;
+	/**
+	 * 
+	 */
 	public int yposition;
 	/**
 	 * Money
@@ -41,6 +44,8 @@ public class Joueur {
 
 	/**
 	 * Method to initialize a player
+	 * @param Nom 
+	 * @param Prenom 
 	 */
 	public Joueur(String Nom, String Prenom) {
 		
@@ -69,6 +74,10 @@ public class Joueur {
 	{
 		return this.xposition;
 	}
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
 	public int getYPosition() 
 	{
 		return this.yposition;
@@ -77,25 +86,10 @@ public class Joueur {
 	/**
 	 * The name of the player
 	 */
-	public void entrerNom() {
-		// TODO - implement Joueur.entrerNom
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * Method to move on board
-	 */
-	public void seDeplacer() {
-		// TODO - implement Joueur.seD�placer
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * Method to do case's action
-	 */
-	public void action() {
-		// TODO - implement Joueur.action
-		throw new UnsupportedOperationException();
+	public void entrerNom() 
+	
+	{
+		
 	}
 
 	/**
@@ -109,19 +103,34 @@ public class Joueur {
 		
 	}
 	
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
 	public String getLastname()
 	{
 		return this.nom;
 	}
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
 	public String getName()
 	{
 		return this.prenom;
 	}
+	/**
+	 * @return
+	 */
+	@SuppressWarnings("javadoc")
 	public int getMoney()
 	{
 		return this.money;
 	}
 
+	/**
+	 * @param amount
+	 */
 	public void deleteMoney(int amount)
 	{
 		this.money -= amount;
