@@ -49,12 +49,12 @@ public class IHM_Joueur extends JFrame implements ActionListener
         lancerde = new JButton("Lancer le dé");
         acheter = new JButton("Acheter");
         vendre = new JButton("Vendre");
-        passertour = new JButton("Passer son tour");
+        passertour = new JButton("Passer tour");
         actioncase = new JButton("Action Case");
         quitter = new JButton("Quitter le jeu");
         banque = new JButton("Banque");
-        pion1 = new JButton("1");
-        pion2 = new JButton("2");
+        pion1 = new JButton("J1");
+        pion2 = new JButton("J2");
         
         pion1.setBackground(Color.GREEN);
         pion2.setBackground(Color.YELLOW);
@@ -71,15 +71,15 @@ public class IHM_Joueur extends JFrame implements ActionListener
         banque.addActionListener(new TraitementBanque());
         
         // Permet de choisir la taille et l'emplacement des bouton et de la fenetre
-        lancerde.setBounds(550, 0, 110, 70);
-        acheter.setBounds(550, 90, 110, 70);
-        vendre.setBounds(550, 180, 110, 70);
-        passertour.setBounds(550, 270, 110, 70);
-        actioncase.setBounds(550, 360, 110, 70);
-        quitter.setBounds(670, 450, 110, 70);
+        lancerde.setBounds(550, 20, 110, 50);
+        acheter.setBounds(550, 80, 110, 50);
+        vendre.setBounds(670, 80, 110, 50);
+        passertour.setBounds(550, 140, 110, 50);
+        actioncase.setBounds(670, 140, 110, 50);
+        quitter.setBounds(670, 475, 110, 30);
         pion1.setBounds(pionj1.getxPosition(), pionj1.getyPosition()+25, 20, 20);
         pion2.setBounds(pionj2.getxPosition(), pionj2.getyPosition(), 20, 20);
-        banque.setBounds(670, 0, 110, 70);
+        banque.setBounds(670, 20, 110, 50);
         panneau.setBounds(300, 100, 800, 500);
         ecran.setBounds(300, 100, 800, 550);
         

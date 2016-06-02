@@ -47,8 +47,8 @@ public class IHM_Depart extends JFrame implements ActionListener
         quitter.addActionListener(new TraitementQuitter());   // Fait que le bouton attend une action
         
         // Permet de choisir la taille et l'emplacement des bouton et de la fenetre
-        jouer.setBounds(50, 200, 100, 100);
-        quitter.setBounds(200, 200, 100, 100);
+        jouer.setBounds(146, 210, 110, 30);
+        quitter.setBounds(146, 260, 110, 30);
         panoe.setBounds(300, 100, 800, 500);
         
         // Ajoute l'image et les boutons à la fenetre
