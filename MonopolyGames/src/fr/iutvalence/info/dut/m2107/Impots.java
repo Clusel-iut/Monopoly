@@ -8,17 +8,9 @@ package fr.iutvalence.info.dut.m2107;
 public class Impots extends Case {
 
 	/**
-	 * Represents the value of the taxe
+	 * Represents the value of the tax
 	 */
-	public int somme;
-
-	/**
-	 * Method to pay taxes
-	 */
-	public void payer() 
-	{
-		//...
-	}
+	public int valueofthetax;
 
 	/**
 	 * @param position
@@ -27,32 +19,36 @@ public class Impots extends Case {
 	public Impots(int position, int impot)
 	{
 		this.position = position;
-		this.somme =  impot;
-		
+		this.valueofthetax =  impot;
 	}
 	
 	/**
-	 * Get some of ???
-	 * @return somme
+	 * get the price of the tax
+	 * @return value
 	 */
-	public int getSomme()
+	public int getValueOfTheTax()
 	{
-		return this.somme;
+		return this.valueofthetax;
 	}
 
 	/**
-	 * set money of ???
-	 * @param somme
+	 * set the value of the tax's case
+	 * @param newtax 
 	 */
-	public void setSomme(int somme)
+	public void setValueOfTheTax(int newtax)
 	{
-		this.somme = somme;
+		this.valueofthetax = newtax;
 	}
 	
-	public int pay(int impot)
+	/**
+	 * @param tax
+	 * @return 
+	 */
+	@SuppressWarnings("javadoc")
+	public int pay(int tax)
 	{
-		this.somme = this.somme - impot;
-		return this.somme;
+		this.valueofthetax = this.valueofthetax - tax;
+		return this.valueofthetax;
 	}
 
 }

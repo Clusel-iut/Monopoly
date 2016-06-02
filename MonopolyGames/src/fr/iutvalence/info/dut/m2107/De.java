@@ -1,7 +1,5 @@
 package fr.iutvalence.info.dut.m2107;
 
-import java.util.Random;
-
 /**
  * @author clusel
  * 
@@ -44,10 +42,10 @@ public class De {
 	}
 
 	/**
-	 * if a player does a 2 sames intergers, he rerolls dices  
+	 * if a player does a 2 same integers, he re-rolls dices  
 	 * 
-	 * @return true if <this.valeur_de1>==<this.valeur_de2>
-	 * else if return false
+	 * @return <true> if <this.valeur_de1> == <this.valeur_de2>
+	 * else if return <false>
 	 * 
 	 */
 	public boolean isDouble()
@@ -84,6 +82,7 @@ public class De {
 
 	/**
 	 * @param advance
+	 * Allows to advance how you want
 	 */
 	public void setAdvance(int advance)
 	{

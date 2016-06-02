@@ -8,18 +8,25 @@ package fr.iutvalence.info.dut.m2107;
  */
 public class Chance extends Case {
 	
-	public static int carte;
+	/**
+	 * Represents the card
+	 */
+	public static int card;
 
 	/**
 	 * Method to draw a card "Chance"
-	 * Return a int
+	 * @return int
 	 */
 	public static int tirerCarteChance() 
 	{
-		carte = (int) (Math.random() * 2 + 1);
-		return carte;		
+		card = (int) (Math.random() * 2 + 1);
+		return card;		
 	}
 		
+	/**
+	 * Allows to create a case Chance on the board
+	 * @param position
+	 */
 	public Chance(int position)
 	{
 		this.position=position;

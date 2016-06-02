@@ -8,11 +8,14 @@ package fr.iutvalence.info.dut.m2107;
  */
 public class CaisseDeCommunaute extends Case {
 	
+	/**
+	 * represent a card, it's a integer .
+	 */
 	public static int carte;
 
 	/**
-	 * Method to draw a card "Caisse de Communaut�"
-	 * @return 
+	 * Method to draw a card "Caisse de Communaute"
+	 * @return a integer
 	 */
 	public static int tirerCarteCommunaute() 
 	{
@@ -21,6 +24,10 @@ public class CaisseDeCommunaute extends Case {
 	}
 		
 	
+	/**
+	 * @param position
+	 * Allows to build a CaisseDeCommunaute in the board
+	 */
 	public CaisseDeCommunaute(int position)
 	{
 		this.position=position;

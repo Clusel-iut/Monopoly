@@ -9,7 +9,7 @@ package fr.iutvalence.info.dut.m2107;
 public class Case {
 
 	/**
-	 * The type of the case
+	 * Represents the type of the case
 	 */
 	protected String type;
 	
@@ -25,17 +25,24 @@ public class Case {
 
 	/**
 	 * Method to get the type of the case
+	 * @return type
 	 */
 	public String getType() 
 	{
 		return this.type;		
 	}
 	
+	/**
+	 * @return name of the player
+	 */
 	public String getName()
 	{
 		return this.nom;
 	}
 	
+	/**
+	 * @return the position of the player
+	 */
 	public int getPosition()
 	{
 		return this.position;

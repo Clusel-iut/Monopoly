@@ -1,6 +1,8 @@
 package fr.iutvalence.info.dut.m2107;
 
 /**
+ * Represents the class Main
+ * It's where we launch the game.
  * @author cluselm
  *
  */
@@ -8,6 +10,7 @@ public class Main
 {
 
 	/**
+	 * 
 	 * @param args
 	 * ALGORITHM:
 	 * 
@@ -19,11 +22,8 @@ public class Main
 	 * 			lancerDe()
 	 * 		lancerDe()
 	 * 		seDeplacer()
-	 * 		action()
-	 * 		currentPlayer = the other player
-	 * 			
-	 * 				
-	 * 		
+	 * 		action() --> ( acheter(), vendre(), .. )
+	 * 		currentPlayer = the other player	
 	 * 		
 	 */
 	public static void main(String[] args)
