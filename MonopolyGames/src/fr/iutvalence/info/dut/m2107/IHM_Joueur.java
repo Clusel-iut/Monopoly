@@ -40,7 +40,7 @@ public class IHM_Joueur extends JFrame implements ActionListener
         //Selection d'un image depuis mon ordinateur
         //plateau.setIcon(new ImageIcon(this.getClass().getResource("/s.jpg")));
 		//
-        plateau.setIcon(new ImageIcon(("G:\\git\\MonopolyV2\\MonopolyGames\\images\\s.jpg")));
+        plateau.setIcon(new ImageIcon(("G:\\git\\Monopoly1\\MonopolyGames\\images\\s.jpg")));
         
         panneau = new JPanel(new BorderLayout(40, 50)); // Taille
         //panneau.setLayout(new GridLayout(1,1));
