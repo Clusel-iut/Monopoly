@@ -34,15 +34,7 @@ public class ParcGratuit extends Case {
 	 */
 	public int getSomme()
 	{
-		return somme;
+		return this.somme;
 	}
-	/**
-	 * ???
-	 * @param somme
-	 */
-	public void setSomme(int somme)
-	{
-		this.somme = somme;
-	}
-
+	
 }

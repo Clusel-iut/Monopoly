@@ -12,6 +12,8 @@ public class IHM_Joueur extends JFrame implements ActionListener
 	Joueur joueur1 = new Joueur("Clusel", "Mathieu");
 	Joueur joueur2 = new Joueur("Rey", "Quentin");
 	De mon_de = new De();
+	Pion pionj1 = new Pion(1);
+	Pion pionj2 = new Pion(2);
 	Banque Labanque = new Banque();
     private String mot;                    // On cr�� la variable mot
     private JButton lancerde, acheter, vendre, passertour, actioncase, quitter, pion1, pion2, banque;       // On cr�� les deux boutons           
@@ -75,8 +77,8 @@ public class IHM_Joueur extends JFrame implements ActionListener
         passertour.setBounds(550, 270, 110, 70);
         actioncase.setBounds(550, 360, 110, 70);
         quitter.setBounds(670, 450, 110, 70);
-        pion1.setBounds(xPion1, yPion1, 20, 20);
-        pion2.setBounds(joueur2.xposition, joueur2.yposition-25, 20, 20);
+        pion1.setBounds(pionj1.getxPosition(), pionj1.getyPosition()+25, 20, 20);
+        pion2.setBounds(pionj2.getxPosition(), pionj2.getyPosition(), 20, 20);
         banque.setBounds(670, 0, 110, 70);
         panneau.setBounds(300, 100, 800, 500);
         ecran.setBounds(300, 100, 800, 550);

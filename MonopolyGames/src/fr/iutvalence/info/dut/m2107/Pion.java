@@ -13,27 +13,49 @@ public class Pion {
 	private int couleur;
 	
 	/**
-	 * Both arguments are representing the x and y's position of the pawn on the board
+	 * X position of the pawn
 	 */
 	private int xPosition;
+	/**
+	 * Y position of the pawn
+	 */
 	private int yPosition;
-	private static final int DEFAULT_XPOSITION = 0;
-	private static final int DEFAULT_YPOSITION = 0;
+	/**
+	 * Default x position of the pawn
+	 */
+	private static final int DEFAULT_XPOSITION = 450;
+	/**
+	 * Default y position of the pawn
+	 */
+	private static final int DEFAULT_YPOSITION = 460;
 
 	
 	/**
-	 * Method to get the position of a player's pawn
+	 * Method to get the x position of a player's pawn
+	 * @return xPosition
 	 */
 	public int getxPosition() {
 		return this.xPosition;
 	}
+	/**
+	 * Method to get the y position of a player's pawn
+	 * @return yPosition
+	 */
 	public int getyPosition() {
 		return this.yPosition;
 	}
+	/**
+	 * Method to get the color of the pawn
+	 * @return couleur
+	 */
 	public int getCouleur() {
 		return this.couleur;
 	}
 
+	/**
+	 * Constructor of a pawn
+	 * @param couleur
+	 */
 	public Pion(int couleur) {
 		this.couleur = couleur;
 		this.xPosition = DEFAULT_XPOSITION;

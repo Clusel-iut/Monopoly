@@ -27,7 +27,7 @@ public class Taxe extends Case {
 	 */
 	public int getSomme()
 	{
-		return somme;
+		return this.somme;
 	}
 
 	/**

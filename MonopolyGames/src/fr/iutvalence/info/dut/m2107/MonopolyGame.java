@@ -27,12 +27,6 @@ public class MonopolyGame
 	 */
 	private Case[] plateau;
 	
-	/**
-	 * rack inputs table
-	 */
-	@SuppressWarnings("unused")
-	private Rack racks;
-	
 	
 	/**
 	 * 
@@ -67,7 +61,6 @@ public class MonopolyGame
 	
 	public MonopolyGame()
 	{
-		this.racks = new Rack();
 		this.Players = new ArrayList<Joueur>();
 		this.Players.add(new Joueur("Clu","jd"));
 		this.Players.add(new Joueur("Rey","Quentin"));
@@ -103,7 +96,7 @@ public class MonopolyGame
 		this.plateau[27] = new Propri("La Bourse", 27, 260, 600, null);
 		this.plateau[28] = new Impots(28,500);
 		this.plateau[29] = new Propri("La Fayette", 29, 280, 650, null);
-		this.plateau[30] = new AllerEnPrison();
+		this.plateau[30] = new Prison();
 		this.plateau[31] = new Propri("Breteuil", 31, 300, 700, null);
 		this.plateau[32] = new Propri("Foch", 32, 300, 700, null);
 		this.plateau[33] = new CaisseDeCommunaute(33);

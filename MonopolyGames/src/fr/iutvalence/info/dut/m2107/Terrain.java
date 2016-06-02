@@ -67,7 +67,7 @@ package fr.iutvalence.info.dut.m2107;
 		 * @param LeLoyer
 		 * @param LePrixMaison
 		 * @param Proprio
-		 * @param NomCase
+		 * @param NomCasse
 		 * @param LaPosition
 		 * @param TypeCase
 		 * @param GroupeCase
@@ -96,7 +96,7 @@ package fr.iutvalence.info.dut.m2107;
 		public int getPrix_construire()
 		
 		{
-			return prix_construire;
+			return this.prix_construire;
 		}
 		
 		/**
@@ -117,7 +117,7 @@ package fr.iutvalence.info.dut.m2107;
 		public int getNb_maisons()
 		
 		{
-			return nb_maisons;
+			return this.nb_maisons;
 		}
 		
 		/**
@@ -139,7 +139,7 @@ package fr.iutvalence.info.dut.m2107;
 		 */
 		public int getCouleur()
 		{
-			return couleur;
+			return this.couleur;
 		}
 		
 		/**
@@ -156,7 +156,8 @@ package fr.iutvalence.info.dut.m2107;
 		}
 		
 		 /**
-		 * @return
+		  * Method to get the position of a case
+		 * @return this.position
 		 */
 		public int getCasePosition()
 		    {
@@ -164,7 +165,8 @@ package fr.iutvalence.info.dut.m2107;
 		    }
 		    
 		    /**
-		     * @return
+		     * Method to get the case's price
+		     * @return this.prix_construire
 		     */
 		    public int getCasePrix()
 		    {
@@ -172,7 +174,8 @@ package fr.iutvalence.info.dut.m2107;
 		    }
 
 		    /**
-		     * @return
+		     * Method to get the price to paye if a player is on an other player's case
+		     * @return this.loyer
 		     */
 		    public int getCaseLoyer()
 		    {
@@ -180,7 +183,8 @@ package fr.iutvalence.info.dut.m2107;
 		    }
 
 		    /**
-		     * @return
+		     * Method to get the owner of a case
+		     * @return this.proprietaire
 		     */
 		    public Joueur getCaseProprietaire()
 		    {
@@ -188,36 +192,54 @@ package fr.iutvalence.info.dut.m2107;
 		    }
 
 		    /**
+		     * give a owner to the case
 		     * @param CaseProprio
 		     */
 		    public void setCaseProprietaire(Joueur CaseProprio)
 		    {
-		        Proprietaire=CaseProprio;
+		        this.Proprietaire=CaseProprio;
 		    }
 
 		    /**
-		     * @return
+		     * Method to know if a case is free or not
+		     * @return boolean
 		     */
 		    public boolean estaVendre()
 		    {
 		        return (this.Proprietaire==null);
 		    }
 
+		    /**
+		     * Method to get case's name
+		     * @return this.NomCase
+		     */
 		    public String getCaseName()
 		    {
 		        return (this.NomCase);
 		    }
 		    
+		    /**
+		     * Method to get house's price
+		     * @return this.PrixMaison
+		     */
 		    public int getPrixMaison()
 		    {
 		        return (this.PrixMaison);
 		    }
 		    
+		    /**
+		     * Method to set the number of house
+		     * @param NbreM
+		     */
 		    public void setnbMaison(int NbreM)
 		    {
 		        this.nb_maisons=NbreM;
 		    }
 		    
+		    /**
+		     * Method to get house's number
+		     * @return this.nb_maisons
+		     */
 		    public int getNbreMaison()
 		    {
 		        return (this.nb_maisons);

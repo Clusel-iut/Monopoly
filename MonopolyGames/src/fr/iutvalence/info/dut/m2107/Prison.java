@@ -16,9 +16,33 @@ public class Prison extends Case {
 	 */
 	private int nb_prisonniers;
 	
+	/**
+	 * Constructor of the jail's case
+	 */
 	public Prison()
 	{
+		this.type = "Prison";
+		this.position = 30;
+		this.nom = "Prison";
 		
+	}
+	
+	/**
+	 * Method to get the name of 
+	 * @return nom_prisonnier
+	 */
+	public String getNom_Prisonnier()
+	{
+		return this.nom_prisonnier;
+	}
+	
+	/**
+	 * Method to get the number of player on case prison
+	 * @return nb_prisonnier
+	 */
+	public int getNbPrisonnier()
+	{
+		return this.nb_prisonniers;
 	}
 
 }

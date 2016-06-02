@@ -5,10 +5,15 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
+/**
+ * the menu of the game
+ * @author martithi
+ *
+ */
 public class IHM_Depart extends JFrame implements ActionListener
 {
 	
-    private String mot;                    // On créé la variable mot
+    private String mot;             	       // On créé la variable mot
     private JButton jouer;      			   // On créé les deux boutons           
 	private JButton quitter;
     JPanel panoe = new JPanel ();
@@ -16,6 +21,9 @@ public class IHM_Depart extends JFrame implements ActionListener
     JLabel affichage = new JLabel();
     JFrame fenetre;
     
+    /**
+     * 
+     */
     public IHM_Depart()// Constructeur pde la classe
     {
         setSize(700, 500);       //Taille de fenetre
@@ -70,6 +78,11 @@ public class IHM_Depart extends JFrame implements ActionListener
  
         
     }
+    /**
+     * Action for if we press "Jouer"
+     * @author martithi
+     *
+     */
     public  class   TraitementJouer implements   ActionListener
     {
          /**
@@ -77,20 +90,25 @@ public class IHM_Depart extends JFrame implements ActionListener
          */
         public  void    actionPerformed(ActionEvent e)
         {
-        	 IHM_Joueur.ecran.setVisible(true);
-        	 fenetre.dispose();
-        	 IHM_Joueur.ecran.setResizable(false);
+        	IHM_Joueur.ecran.setVisible(true);
+        	IHM_Depart.this.fenetre.dispose();
+        	IHM_Joueur.ecran.setResizable(false);
         }
     }
     
-     public  class   TraitementQuitter implements   ActionListener
+     /**
+      * Action for if we press "Quitter"
+     * @author martithi
+     *
+     */
+    public  class   TraitementQuitter implements   ActionListener
     {
          /**
          * obligatoire car test implémente l'interface ActionListener
          */
         public  void    actionPerformed(ActionEvent e)
         {
-        	 fenetre.dispose();
+        	 IHM_Depart.this.fenetre.dispose();
             
         }
     }

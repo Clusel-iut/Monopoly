@@ -16,15 +16,15 @@ public class Depart extends Case {
 	/**
 	 * represents the type of the case
 	 */
-	public String start="Depart";
+	private String start="Depart";
 	/**
 	 * represents the position  of the case
 	 */
-	public int startposition=0;
+	private int startposition=0;
 	/**
 	 * represents the name of the case
 	 */
-	public String namestart="Depart";
+	private String namestart="Depart";
 	
 	
 	/**
@@ -45,6 +45,15 @@ public class Depart extends Case {
 	{
 			// add 2000 
 			// money of the player + this.somme
+	}
+	
+	/**
+	 * Method to get money a player earn each times he pass through the start case ("2000")
+	 * @return this.somme
+	 */
+	public int getSomme()
+	{
+		return this.somme;
 	}
 
 

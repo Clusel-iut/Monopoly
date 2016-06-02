@@ -35,10 +35,12 @@ package fr.iutvalence.info.dut.m2107;
 		/**
 		 * Identifier of player
 		 */
+		@SuppressWarnings("unused")
 		private int num_joueur;
 		/**
 		 * Pawn's color
 		 */
+		@SuppressWarnings("unused")
 		private int couleur;
 		
 		/**
