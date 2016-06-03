@@ -15,7 +15,7 @@
 		Pion pionj1 = new Pion(1);
 		Pion pionj2 = new Pion(2);
 		Banque Labanque = new Banque();
-	    private String mot;                    // On cr�� la variable mot
+	    private String mot;                    // On cree la variable mot
 	    private JButton lancerde, acheter, vendre, passertour, actioncase, quitter, pion1, pion2, banque;       // On cr�� les deux boutons           
 	    public int xPion1 = pionj1.getxPosition();
 	    public int yPion1 = pionj1.getyPosition()+25;
@@ -149,7 +149,7 @@
 	     public  class   TraitementAchat implements   ActionListener
 	    {
 			/**
-	         * obligatoire car test impl�mente l'interface ActionListener
+	         * obligatoire car test implemente l'interface ActionListener
 	         */
 	        public  void    actionPerformed(ActionEvent e)
 	        {
@@ -161,7 +161,7 @@
 	     public  class   TraitementVente implements   ActionListener
 	     {
 	          /**
-	          * obligatoire car test impl�mente l'interface ActionListener
+	          * obligatoire car test implemente l'interface ActionListener
 	          */
 	         public  void    actionPerformed(ActionEvent e)
 	         {
@@ -172,7 +172,7 @@
 	      public  class   TraitementPasserTour implements   ActionListener
 	     {
 	          /**
-	          * obligatoire car test impl�mente l'interface ActionListener
+	          * obligatoire car test implemente l'interface ActionListener
 	          */
 	         public  void    actionPerformed(ActionEvent e)
 	         {
@@ -184,7 +184,7 @@
 	      public  class   TraitementAction implements   ActionListener
 	      {
 	           /**
-	           * obligatoire car test impl�mente l'interface ActionListener
+	           * obligatoire car test implemente l'interface ActionListener
 	           */
 	          public  void    actionPerformed(ActionEvent e)
 	          {
@@ -196,7 +196,7 @@
 	      public  class   TraitementQuitter implements   ActionListener
 	      {
 	           /**
-	           * obligatoire car test impl�mente l'interface ActionListener
+	           * obligatoire car test implemente l'interface ActionListener
 	           */
 	          public  void    actionPerformed(ActionEvent e)
 	          {
@@ -208,7 +208,7 @@
 	      public  class   TraitementPion1 implements   ActionListener
 	      {
 	           /**
-	           * obligatoire car test impl�mente l'interface ActionListener
+	           * obligatoire car test implemente l'interface ActionListener
 	           */
 	          public  void    actionPerformed(ActionEvent e)
 	          {
@@ -220,7 +220,7 @@
 	      public  class   TraitementPion2 implements   ActionListener
 	      {
 	           /**
-	           * obligatoire car test impl�mente l'interface ActionListener
+	           * obligatoire car test implemente l'interface ActionListener
 	           */
 	          public  void    actionPerformed(ActionEvent e)
 	          {
@@ -233,7 +233,7 @@
 	      public  class   TraitementBanque implements   ActionListener
 	      {
 	           /**
-	           * obligatoire car test impl�mente l'interface ActionListener
+	           * obligatoire car test implemente l'interface ActionListener
 	           */
 	          public  void    actionPerformed(ActionEvent e)
 	          {
