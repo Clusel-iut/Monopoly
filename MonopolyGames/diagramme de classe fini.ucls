@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.9" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="fr.iutvalence.info.dut.m2107.Pion" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Pion.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="147" x="110" y="1405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="fr.iutvalence.info.dut.m2107.Terrain" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Terrain.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="531" width="214" x="1943" y="834"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="fr.iutvalence.info.dut.m2107.Compagnie" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Compagnie.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="193" x="1299" y="834"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="fr.iutvalence.info.dut.m2107.IHM_Joueur.TraitementAchat" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/IHM_Joueur.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="297" y="1405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="fr.iutvalence.info.dut.m2107.AllerEnPrison" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/AllerEnPrison.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="129" x="1253" y="587"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="fr.iutvalence.info.dut.m2107.Depart" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Depart.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="129" x="1422" y="587"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="fr.iutvalence.info.dut.m2107.Partie" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Partie.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="157" x="137" y="57"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="fr.iutvalence.info.dut.m2107.Taxe" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Taxe.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="129" x="1799" y="587"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="9" language="java" name="fr.iutvalence.info.dut.m2107" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="50" width="180" x="1225" y="57"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="10" language="java" name="fr.iutvalence.info.dut.m2107.IHM_Depart.TraitementQuitter" 
+    project="MonopolyGames" file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/IHM_Depart.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="244" y="358"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="fr.iutvalence.info.dut.m2107.IHM_Joueur.TraitementBanque" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/IHM_Joueur.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="531" y="1405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="fr.iutvalence.info.dut.m2107.IHM_Joueur.TraitementDe" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/IHM_Joueur.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="765" y="1405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="fr.iutvalence.info.dut.m2107.Propri" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Propri.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="168" x="1591" y="587"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="fr.iutvalence.info.dut.m2107.IHM_Joueur" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/IHM_Joueur.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="405" width="194" x="1701" y="834"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="fr.iutvalence.info.dut.m2107.Case" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Case.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="129" x="2071" y="358"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="fr.iutvalence.info.dut.m2107.IHM_Joueur.TraitementQuitter" 
+    project="MonopolyGames" file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/IHM_Joueur.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="999" y="1405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="fr.iutvalence.info.dut.m2107.Main" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Main.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="129" x="2076" y="57"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="fr.iutvalence.info.dut.m2107.IHM_Joueur.TraitementAction" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/IHM_Joueur.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="1233" y="1405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="fr.iutvalence.info.dut.m2107.IHM_Joueur.TraitementPasserTour" 
+    project="MonopolyGames" file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/IHM_Joueur.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="1467" y="1405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="fr.iutvalence.info.dut.m2107.De" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/De.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="243" width="129" x="2897" y="1405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="fr.iutvalence.info.dut.m2107.Prison" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Prison.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="155" x="1968" y="587"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="fr.iutvalence.info.dut.m2107.Joueur" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Joueur.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2636" y="1061"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="fr.iutvalence.info.dut.m2107.CaisseDeCommunaute" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/CaisseDeCommunaute.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="155" x="2163" y="587"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="fr.iutvalence.info.dut.m2107.Impots" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Impots.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="157" x="2358" y="587"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="fr.iutvalence.info.dut.m2107.IHM_Depart" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/IHM_Depart.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="194" x="361" y="57"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="fr.iutvalence.info.dut.m2107.ParcGratuit" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/ParcGratuit.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="130" x="2555" y="587"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="fr.iutvalence.info.dut.m2107.IHM_Joueur.TraitementPion1" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/IHM_Joueur.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="1701" y="1405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="fr.iutvalence.info.dut.m2107.IHM_Joueur.TraitementPion2" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/IHM_Joueur.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="1935" y="1405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="fr.iutvalence.info.dut.m2107.MonopolyGame" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/MonopolyGame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="138" x="2876" y="57"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="fr.iutvalence.info.dut.m2107.IHM_Joueur.TraitementVente" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/IHM_Joueur.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="2169" y="1405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="fr.iutvalence.info.dut.m2107.Banque" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Banque.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="164" x="2403" y="1405"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="fr.iutvalence.info.dut.m2107.IHM_Depart.TraitementJouer" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/IHM_Depart.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="478" y="358"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="fr.iutvalence.info.dut.m2107.Gare" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Gare.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="129" x="1532" y="834"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="fr.iutvalence.info.dut.m2107.Chance" project="MonopolyGames" 
+    file="/MonopolyGames/src/fr/iutvalence/info/dut/m2107/Chance.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="130" x="2725" y="587"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <nesting id="35">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="11"/>  
+  </nesting>  
+  <generalization id="36">    
+    <end type="SOURCE" refId="34"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <generalization id="37">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="38">    
+    <bendpoint x="2885" y="358"/>    
+    <bendpoint x="2885" y="587"/>    
+    <bendpoint x="2885" y="834"/>    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="39" name="Players"/>      
+      <multiplicity id="40" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="41">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="19"/>  
+  </nesting>  
+  <nesting id="42">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="4"/>  
+  </nesting>  
+  <generalization id="43">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="44">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="45" name="pionj2"/>      
+      <multiplicity id="46" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="47">    
+    <bendpoint x="2187" y="834"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="48" name="proprietaire"/>      
+      <multiplicity id="49" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="50">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="32"/>  
+  </nesting>  
+  <generalization id="51">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <nesting id="52">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="16"/>  
+  </nesting>  
+  <association id="53">    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="54" name="plateau"/>      
+      <multiplicity id="55" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="56">    
+    <bendpoint x="2906" y="358"/>    
+    <bendpoint x="2906" y="587"/>    
+    <bendpoint x="2906" y="834"/>    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="57" name="dice"/>      
+      <multiplicity id="58" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="59">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="60">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="61" name="Labanque"/>      
+      <multiplicity id="62" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="63">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="64" name="pionj1"/>      
+      <multiplicity id="65" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="66">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <generalization id="67">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <association id="68">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="69" name="joueur1"/>      
+      <multiplicity id="70" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="71">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <generalization id="72">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <nesting id="73">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="12"/>  
+  </nesting>  
+  <generalization id="74">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <nesting id="75">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="10"/>  
+  </nesting>  
+  <association id="76">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="77" name="mon_de"/>      
+      <multiplicity id="78" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="79">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <nesting id="80">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="28"/>  
+  </nesting>  
+  <generalization id="81">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="15"/>  
+  </generalization>  
+  <nesting id="82">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="18"/>  
+  </nesting>  
+  <association id="83">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="84" name="joueur2"/>      
+      <multiplicity id="85" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="86">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="87" name="Proprietaire"/>      
+      <multiplicity id="88" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting id="89">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="27"/>  
+  </nesting>  
+  <nesting id="90">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="30"/>  
+  </nesting>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
