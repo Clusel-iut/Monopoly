@@ -4,111 +4,112 @@ import java.awt.*;
 import java.awt.event.*;
 
 import javax.swing.*;
-
 /**
- * the menu of the game
- * @author martithi
- *
+ * Represent the Departure window whith button and the picture
+ * 
  */
 public class IHM_Depart extends JFrame implements ActionListener
 {
 	
-    private String mot;             	       // On créé la variable mot
-    private JButton jouer;      			   // On créé les deux boutons           
+/**
+ * Represent the button to begin the game 
+ */
+    private JButton jouer;
+/**
+ * Represent the button to leave the game         
+ */
 	private JButton quitter;
+ /**
+  * Represent all that there are in the window
+  */
     JPanel panoe = new JPanel ();
+ /**
+  * Represent the picture of the window
+  */
     JLabel image = new JLabel();
-    JLabel affichage = new JLabel();
+
+ /**
+  * Represent the Departure window empty
+  */
     JFrame fenetre;
     
-    /**
-     * 
-     */
-    public IHM_Depart()// Constructeur pde la classe
+ /**
+  *   It is the constructor of this class
+  */
+    public IHM_Depart()
     {
-        setSize(700, 500);       //Taille de fenetre
-        setTitle("Bouton");      // Nom de la fentre
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        //setSize(700, 500);       
+        //setTitle("Bouton");      
+        setDefaultCloseOperation(EXIT_ON_CLOSE); // allows add on the window 3 buttons. One to shrink the window, one to change the size of the window 
         
-        fenetre = new JFrame("Ma premiere fenetre");
-		fenetre.setBounds(300, 100, 412, 440);
-		fenetre.setLayout(new GridLayout(1,1));
+        fenetre = new JFrame("Bienvenue sur le jeu de Jumatik"); // Window name
+		fenetre.setBounds(300, 100, 412, 440); //Window size
+		fenetre.setLayout(new GridLayout(1,1)); // Met la fenetre au milieu
 		
-        //Selection d'un image depuis mon ordinateur
-        //image.setIcon(new ImageIcon(this.getClass().getResource("/l.png")));
-        image.setIcon(new ImageIcon(("G:\\git\\Monopoly1\\MonopolyGames\\images\\l.png")));
-        panoe = new JPanel(new BorderLayout(40, 50)); // Taille
-        //panoe.setLayout(new GridLayout(1,1));
-        jouer = new JButton("Jouer");
-        quitter = new JButton("Quitter");
+        
+        image.setIcon(new ImageIcon(("G:\\git\\MonopolyV2\\MonopolyGames\\images\\l.png"))); //add picture in Jlabel "image"
+        panoe = new JPanel(new BorderLayout(40, 50)); // Pannel Board
+        jouer = new JButton("Jouer"); // Button name set Jouer.
+        quitter = new JButton("Quitter"); //  Button name set Quitter
         
        
-		jouer.addActionListener(new TraitementJouer());  // Fait que le bouton attend une action
-        quitter.addActionListener(new TraitementQuitter());   // Fait que le bouton attend une action
+		jouer.addActionListener(new TraitementJouer());  // The button waits an action
+        quitter.addActionListener(new TraitementQuitter());   // The button waits an action
         
-        // Permet de choisir la taille et l'emplacement des bouton et de la fenetre
-        jouer.setBounds(146, 210, 110, 30);
-        quitter.setBounds(146, 260, 110, 30);
+        // It is to choose the size and the positon of Buttons and pannel 
+        jouer.setBounds(50, 200, 100, 100);
+        quitter.setBounds(200, 200, 100, 100);
         panoe.setBounds(300, 100, 800, 500);
         
-        // Ajoute l'image et les boutons à la fenetre
+        // Add picture and buttons to the pannel
         panoe.add(jouer);
         panoe.add(quitter);
         panoe.add(image);
         
-        // Affiche la fenetre 
+        //Add the pannel to the window
         fenetre.add(panoe);
-        // Met la fenetre visble 
-        fenetre.setVisible(true);
-       // Graphics g = jouer.getGraphics();
-       // g.setColor(Color.BLACK);
-       // g.fillRect(jouer.getBounds().x, jouer.getBounds().y, jouer.getBounds().width, jouer.getBounds().height);
-       // jouer.update(g);
-       // jouer.repaint();
         
+        // Put visible the window 
+        fenetre.setVisible(true);
+        
+
+        // Validate changes
         validate();
         
-        
-      
-        
-  //  void fermer()
-   // {
-    // panoe.dispose();	   
-    //}    
- 
-        
+    
     }
+
+    
     /**
-     * Action for if we press "Jouer"
-     * @author martithi
+     * Represent the action when you clic on the button Jouer
+     * @author reyqu
      *
      */
     public  class   TraitementJouer implements   ActionListener
     {
          /**
-         * obligatoire car test implémente l'interface ActionListener
+         * compulsory but we implement the interface ActionListener
          */
         public  void    actionPerformed(ActionEvent e)
         {
-        	IHM_Joueur.ecran.setVisible(true);
-        	IHM_Depart.this.fenetre.dispose();
-        	IHM_Joueur.ecran.setResizable(false);
+        	 IHM_Joueur.ecran.setVisible(true); // Display window in IHM_joueur
+        	 fenetre.dispose(); // removed the display of this window ( in IHM_Depart)
+        	 IHM_Joueur.ecran.setResizable(false); // The size of the window in IHM_Joueur can't changes
         }
     }
-    
-     /**
-      * Action for if we press "Quitter"
-     * @author martithi
-     *
-     */
-    public  class   TraitementQuitter implements   ActionListener
+ /**
+  * Represent the action when you clic on the button Quitter
+  * @author reyqu
+  *
+  */
+     public  class   TraitementQuitter implements   ActionListener
     {
          /**
-         * obligatoire car test implémente l'interface ActionListener
+         * compulsory but we implement the interface ActionListener
          */
         public  void    actionPerformed(ActionEvent e)
         {
-        	 IHM_Depart.this.fenetre.dispose();
+        	 fenetre.dispose();  // removed the display of this window ( in this class)
             
         }
     }
@@ -119,4 +120,5 @@ public class IHM_Depart extends JFrame implements ActionListener
 		
 	}
 }
+     
      
