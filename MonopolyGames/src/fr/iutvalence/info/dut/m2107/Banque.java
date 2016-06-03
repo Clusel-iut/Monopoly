@@ -3,7 +3,7 @@ package fr.iutvalence.info.dut.m2107;
 /**
  * Class representing the bank's system
  * 
- * @author martithi
+ * @author cluselm
  *
  */
 public class Banque {
@@ -36,6 +36,12 @@ public class Banque {
 	public static int getBankMoney()
 	{
 		return bank_money;
+	}
+	
+	public static String Banqueroute()
+	{
+		
+		return ("La banque a fait faillite, vous avez gagné !");
 	}
 	
 

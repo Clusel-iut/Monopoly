@@ -140,7 +140,7 @@ public class MonopolyGame
 	{
 		
 		int i=0;		
-		int valeur_carte=0;		
+		int value_card=0;		
 		while (i <= this.NbOfCurrentPlayer)
 		{	
 			this.avancer1 = this.dice.lancerDe();			
@@ -149,17 +149,17 @@ public class MonopolyGame
 			Propri lacase = (Propri) this.plateau[this.position];			
 			if (lacase.getPosition() == 7 || lacase.getPosition() == 22 || lacase.getPosition() == 36 )
 			{
-				valeur_carte=Chance.tirerCarteChance();				
-				if ( valeur_carte == 1)
+				value_card=Chance.tirerCarteChance();				
+				if ( value_card == 1)
 				{
 					AllerEnPrison variable = new AllerEnPrison();
 					this.Players.get(i).setPlayerPosition(variable.allerEnPrison()) ;
 				}				
-				if ( valeur_carte == 2)
+				if ( value_card == 2)
 				{
 					this.Players.get(i).addMoney(600);
 				}
-				if ( valeur_carte == 3)
+				if ( value_card == 3)
 				{
 					
 					this.Players.get(i).deleteMoney(500);
@@ -168,17 +168,17 @@ public class MonopolyGame
 			}
 			if (lacase.getPosition() == 2 || lacase.getPosition() == 17 || lacase.getPosition() == 33)
 			{
-				valeur_carte=CaisseDeCommunaute.tirerCarteCommunaute();				
-				if ( valeur_carte == 1)
+				value_card=CaisseDeCommunaute.tirerCarteCommunaute();				
+				if ( value_card == 1)
 				{
 					AllerEnPrison variable = new AllerEnPrison();
 					this.Players.get(i).setPlayerPosition(variable.allerEnPrison()) ;
 				}				
-				if ( valeur_carte == 2)
+				if ( value_card == 2)
 				{
 					this.Players.get(i).addMoney(600);
 				}				
-				if ( valeur_carte == 3)
+				if ( value_card == 3)
 				{
 					this.Players.get(i).deleteMoney(500);
 				}				
@@ -212,7 +212,7 @@ public class MonopolyGame
 				if ( /* he want */ i == 0)
 				{
 					Propri.setProprietaire(this.Players.get(i));
-					this.Players.get(i).deleteMoney(lacase.getPrix_Loyer());
+					this.Players.get(i).deleteMoney(lacase.getPrix_achat());
 				}				
 				break;				
 			}
@@ -229,6 +229,9 @@ public class MonopolyGame
 			}
 			
 			if ( Banque.getBankMoney() == 0)
+			{
+				Banque.Banqueroute();
+			}
 			
 			i++;
 			

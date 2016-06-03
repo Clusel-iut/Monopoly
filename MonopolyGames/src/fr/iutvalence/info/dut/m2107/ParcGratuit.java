@@ -15,17 +15,17 @@ public class ParcGratuit extends Case {
 	/**
 	 * The method to receive the Parc Gratuit's money
 	 */
-	public void recevoirArgent() {
-		// TODO - implement ParcGratuit.recevoirArgent
-		throw new UnsupportedOperationException();
+	public void recevoirArgent() 
+	{
+		//...
 	}
 
 	/**
-	 * Methos to put money on Parc Gratuit's case
+	 * Methods to put money on Parc Gratuit's case
 	 */
-	public void verserArgent() {
-		// TODO - implement ParcGratuit.verserArgent
-		throw new UnsupportedOperationException();
+	public void verserArgent() 
+	{
+		//...
 	}
 
 	/**

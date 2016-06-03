@@ -16,9 +16,9 @@ public class Taxe extends Case {
 	/**
 	 * Method to pay taxes
 	 */
-	public void payer() {
-		// TODO - implement Taxe.payer
-		throw new UnsupportedOperationException();
+	public void payer() 
+	{
+		//...
 	}
 
 	/**

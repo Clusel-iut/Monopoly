@@ -3,7 +3,7 @@ package fr.iutvalence.info.dut.m2107;
 /**
  * Class representing the case "Chance"
  * 
- * @author martithi
+ * @author cluselm
  *
  */
 public class Chance extends Case {
